@@ -7,7 +7,6 @@ import { fromEvent, Observable, Subscription } from 'rxjs';
   styleUrls: ['./mobile-library-card.component.scss']
 })
 export class MobileLibraryCardComponent implements OnInit {
-  title = 'desktopLibTest';
   defaultImage = 'assets/imgs/default.png';
   contentList = [
     {
@@ -79,7 +78,7 @@ export class MobileLibraryCardComponent implements OnInit {
       "prevState": "Processing",
       "lastPublishedOn": "2018-11-21T05:40:48.675+0000",
       "size": 7813097,
-      "name": "Creation 100100",
+      "name": "Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  Creation 100100  ",
       "attributions": [
         "testing"
       ],
@@ -1200,15 +1199,13 @@ export class MobileLibraryCardComponent implements OnInit {
   isOnlineMessage: string;
   isOnline: boolean;
 
-
-  test() {
-    alert("clicked");
-  }
+  title = 'English';
+  viewMoreButtonText = 'View More';
 
   ngOnInit() {
     /**
-* Get the online/offline status from browser window
-*/
+     * Get the online/offline status from browser window 
+     */
     this.onlineEvent = fromEvent(window, 'online');
     this.offlineEvent = fromEvent(window, 'offline');
 
@@ -1231,7 +1228,9 @@ export class MobileLibraryCardComponent implements OnInit {
     }));
   }
 
-
+  showAllList(event) {
+    console.log('Event Received: ', event);
+  }
   ngOnDestroy(): void {
     /**
     * Unsubscribe all subscriptions to avoid memory leak
