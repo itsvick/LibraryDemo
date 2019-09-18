@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { DesktopLibraryCardComponent } from './desktop/desktop-library-card/desktop-library-card.component';
 import { MobileLibraryCardComponent } from './mobile/mobile-library-card/mobile-library-card.component';
 
-DesktopLibraryCardComponent
 
 const routes: Routes = [
   {

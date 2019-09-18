@@ -8,6 +8,7 @@ import { fromEvent, Observable, Subscription } from 'rxjs';
 })
 export class DesktopLibraryCardComponent implements OnInit {
   title = 'desktopLibTest';
+  viewMoreButtonText = 'View all'
   defaultImage = 'https://dummyimage.com/600x400/000/fff';
   contentList = [
     {
@@ -1237,6 +1238,14 @@ export class DesktopLibraryCardComponent implements OnInit {
     * Unsubscribe all subscriptions to avoid memory leak
     */
     this.subscriptions.forEach(subscription => subscription.unsubscribe());
+  }
+
+  showAllList(data) {
+    console.log('Event inside consumer -- ', data);
+  }
+
+  cardClick(data){
+    console.log('Event inside consumer', data);
   }
 
 }
