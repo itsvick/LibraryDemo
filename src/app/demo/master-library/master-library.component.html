@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="item desktop ">
+    <h2>
+      Desktop Library Cards
+    </h2>
+    <div>
+      <div style="margin-bottom: 16px">
+        <sb-library-cards-grid [title]="subjects[0]" [contentList]="contentList1"
+          [viewMoreButtonText]="viewAllButtonText" (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)">
+        </sb-library-cards-grid>
+      </div>
+
+      <div style="margin-bottom: 16px">
+        <sb-library-cards-grid [title]="subjects[1]" [contentList]="contentList"
+          [viewMoreButtonText]="viewAllButtonText" (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)">
+        </sb-library-cards-grid>
+      </div>
+
+
+      <div style="margin-bottom: 16px">
+        <sb-library-cards-grid [title]="subjects[2]" [contentList]="contentList"
+          [viewMoreButtonText]="viewAllButtonText" (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)"
+          [cardDisplayCount]="3">
+        </sb-library-cards-grid>
+      </div>
+
+
+      <div style="margin-bottom: 16px">
+        <sb-library-cards-grid [title]="subjects[3]" [contentList]="contentList"
+          [viewMoreButtonText]="viewAllButtonText" [cardDisplayCount]="4" (buttonClick)="showAllList($event)"
+          (cardClick)="cardClick($event)">
+        </sb-library-cards-grid>
+      </div>
+
+
+      <div style="margin-bottom: 16px">
+        <sb-library-cards-grid [title]="subjects[4]" [contentList]="contentList"
+          [viewMoreButtonText]="viewAllButtonText" [cardDisplayCount]="5" (buttonClick)="showAllList($event)"
+          (cardClick)="cardClick($event)">
+        </sb-library-cards-grid>
+      </div>
+
+    </div>
+  </div>
+  <div class="item mobile">
+    <h2>
+      Mobile Library Cards
+    </h2>
+    <div>
+      <div style="margin-bottom: 16px">
+        <sb-library-cards-stack [title]="subjects[0]" [contentList]="contentList"
+          [viewMoreButtonText]="viewMoreButtonText" [cardDisplayCount]="3" (buttonClick)="showAllList($event)">
+        </sb-library-cards-stack>
+      </div>
+
+      <div style="margin-bottom: 16px">
+        <sb-library-cards-stack [title]="subjects[1]" [contentList]="contentList"
+          [viewMoreButtonText]="viewMoreButtonText" [cardDisplayCount]="3" (buttonClick)="showAllList($event)">
+        </sb-library-cards-stack>
+      </div>
+
+      <div style="margin-bottom: 16px">
+        <sb-library-cards-stack [title]="subjects[2]" [contentList]="contentList"
+          [viewMoreButtonText]="viewMoreButtonText" [defaultImg]="defaultImage" (buttonClick)="showAllList($event)">
+        </sb-library-cards-stack>
+      </div>
+
+    </div>
+  </div>
+</div>

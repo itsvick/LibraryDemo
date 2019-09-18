@@ -1,83 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
-:root {
-    --font-stack-en: 'Noto Sans','Noto Sans Devanagari','Noto Sans Tamil','Noto Sans Bengali','Noto Sans Malayalam','Noto Sans Gurmukhi','Noto Sans Gujarati','Noto Sans Telugu','Noto Sans Kannada','Noto Sans Oriya','Noto Nastaliq Urdu',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
-    --font-stack-hi: 'Noto Sans Devanagari','Noto Sans','Noto Sans Tamil','Noto Sans Bengali','Noto Sans Malayalam','Noto Sans Gurmukhi','Noto Sans Gujarati','Noto Sans Telugu','Noto Sans Kannada','Noto Sans Oriya','Noto Nastaliq Urdu',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
-    --font-stack-ur: 'Noto Sans','Noto Nastaliq Urdu','Noto Sans Devanagari','Noto Sans Tamil','Noto Sans Bengali','Noto Sans Malayalam','Noto Sans Gurmukhi','Noto Sans Gujarati','Noto Sans Telugu','Noto Sans Kannada','Noto Sans Oriya',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
-    
-    --blue: #024f9d; 
-    --black: #000000;
-    --green: #008840;
-    --orange: #e55a28;
-    --red: #ff4558;
-    --white: #ffffff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --yellow: #ffc107;
-    // --teal: #20c997;
-    --cyan: #17a2b8;
-    --gray: hsl(var(--gray-hs),20%);
-    --gray-0: hsl(var(--gray-hs),95%); // place holder active bg #F2F2F2
-    --gray-100: hsl(var(--gray-hs),80%); // disable btn bg, icon color #CCCCCC
-    --gray-200: hsl(var(--gray-hs),60%); // disable text, place holder text #999999
-    --gray-300: hsl(var(--gray-hs),59%); // sub heading 2 #969696
-    --gray-400: hsl(var(--gray-hs),40%); // sub heading #666666
-    --gray-800: var(--gray); // text color #333333
-  
-    --primary-color: var(--blue);
-    --secondary-color: var(--green);
-    --tertiary-color: var(--orange);
-  
-    --primary-0: #F3F7FA; // bg
-    --primary-100: #EDF4F9; // default button bg
-    --primary-200: #80A7CE; // divider
-    --primary-250:#D3E7F4; //pagination bg color
-    --primary-300: #7AB4EE; // outline, focus fields
-    --primary-400: var(--primary-color); // button bg, heading, table titles, links, toggles 
-    --primary-600: #005391; // on press
-    --primary-800: #002E50; // hover
-  
-    --secondary-0: #E1F;
-  
-    --gray-hs: 0,0%;
-    --gray: hsl(var(--gray-hs),20%);
-    --gray-0: hsl(var(--gray-hs),95%); // place holder active bg #F2F2F2
-    --gray-100: hsl(var(--gray-hs),80%); // disable btn bg, icon color #CCCCCC
-    --gray-200: hsl(var(--gray-hs),60%); // disable text, place holder text #999999
-    --gray-300: hsl(var(--gray-hs),59%); // sub heading 2 #969696
-    --gray-400: hsl(var(--gray-hs),40%); // sub heading #666666
-    --gray-800: var(--gray); // text color #333333
-  
-    --primary-color: var(--blue);
-    --secondary-color: var(--green);
-    --tertiary-color: var(--orange);
-  
-    --primary-0: #F3F7FA; // bg
-    --primary-100: #EDF4F9; // default button bg
-    --primary-200: #80A7CE; // divider
-    --primary-250:#D3E7F4; //pagination bg color
-    --primary-300: #7AB4EE; // outline, focus fields
-    --primary-400: var(--primary-color); // button bg, heading, table titles, links, toggles 
-    --primary-600: #005391; // on press
-    --primary-800: #002E50; // hover
-  
-    --secondary-0: #E1FFDF; // toast bg, label
-    --secondary-100: #00C786; // buttong bg, toast
-    --secondary-200: #07bc81; // button bg
-    --secondary-400: var(--secondary-color); // hover
-  
-    --tertiary-0: #FEEDD7; // toast bg, label
-    --tertiary-100: #FFA11D; // buttong bg, toast
-    --tertiary-400: var(--tertiary-color); // icon, label, notification bg
-  
-    --red-0: #FBCCD1; // toast bg
-    --red-100: #FF6979; // buttong bg, toast
-    --red-400: var(--red); // icon color, lable, notification
-  
-    --base-block-space:8px; // block space
-    --icon-svg-xs:calc(var(--base-block-space) * 2);
-    --icon-svg-sm:calc(var(--base-block-space) * 2.5);
-    --icon-svg-md:calc(var(--base-block-space) * 3);
-    --icon-svg-lg:calc(var(--base-block-space) * 4);
-    --icon-svg-xl:calc(var(--base-block-space) * 5);
-  }
+@font-face {
+  font-family: "NotoSans";
+  src: url("./assets/fonts/NotoSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.NotoSans {
+  font-family: "NotoSans" !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.NotoSans-semi-bold {
+  font-family: "NotoSans" !important;
+  font-weight: 600 !important;
+}
+
+.NotoSans-bold {
+  font-family: "NotoSans" !important;
+  font-weight: 700 !important;
+}
+.NotoSans-extra-bold {
+  font-family: "NotoSans" !important;
+  font-weight: 900 !important;
+}
+
+body {
+  font-family: "NotoSans" !important;
+  font-weight: normal;
+  font-style: normal;
+}

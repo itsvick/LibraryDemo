@@ -1,0 +1,20 @@
+:host {
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+
+  .item {
+    padding: 16px;
+    overflow: scroll;
+    box-sizing: border-box;
+  }
+  .desktop {
+    background-color: var(--primary-100);
+    flex: 0 0 70%;
+  }
+  .mobile {
+    background-color: white;
+    flex: 0 0 30%;
+  }
+}
