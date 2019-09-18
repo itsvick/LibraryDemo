@@ -13,5 +13,8 @@
     </div>
   </div>
 </div> -->
+<sb-library-cards-grid [title]="title" [contentList]="contentList1" [viewMoreButtonText]="viewMoreButtonText" (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)"></sb-library-cards-grid>
 <sb-library-cards-grid [title]="title" [contentList]="contentList" [viewMoreButtonText]="viewMoreButtonText" (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)"></sb-library-cards-grid>
+<sb-library-cards-grid [title]="title" [contentList]="contentList" [viewMoreButtonText]="viewMoreButtonText" (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)" [cardDisplayCount]="3"></sb-library-cards-grid>
+<sb-library-cards-grid [title]="title" [contentList]="contentList" [viewMoreButtonText]="viewMoreButtonText" [cardDisplayCount]="4" (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)"></sb-library-cards-grid>
 <sb-library-cards-grid [title]="title" [contentList]="contentList" [viewMoreButtonText]="viewMoreButtonText" [cardDisplayCount]="5" (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)"></sb-library-cards-grid>
