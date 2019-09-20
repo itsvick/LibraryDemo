@@ -28,7 +28,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "./node_modules/sb-styles/assets/styles.scss"
+              "./node_modules/sb-styles/assets/_styles.scss"
             ],
             "scripts": [],
             "preserveSymlinks": true

@@ -1,4 +1,15 @@
+@import '../../../../node_modules/sb-styles/assets/mixins/custom-mixins';
 :host {
+
+  .header {
+    background-color: #024f9d;
+    height: 30px;
+    width: 100%;
+    color: #FFFFFF;
+    @include padding(8px);
+    font-size: 24px;
+    font-weight: bold;
+  }
   .container {
     display: flex;
     height: 100vh;
