@@ -1,2 +1,25 @@
-<sb-library-cards-stack [title]="title" [contentList]="contentList" [viewMoreButtonText]="viewMoreButtonText" (buttonClick)="showAllList($event)">
-</sb-library-cards-stack>
+<div>
+    <div class="header">
+        Library Cards
+    </div>
+    <div class="container">
+        <div style="margin-bottom: 16px">
+            <sb-library-cards-stack [title]="subjects[0]" [contentList]="contentList"
+                [viewMoreButtonText]="viewMoreButtonText" [cardDisplayCount]="3" (buttonClick)="showAllList($event)">
+            </sb-library-cards-stack>
+        </div>
+
+        <div style="margin-bottom: 16px">
+            <sb-library-cards-stack [title]="subjects[1]" [contentList]="contentList"
+                [viewMoreButtonText]="viewMoreButtonText" [cardDisplayCount]="3" (buttonClick)="showAllList($event)">
+            </sb-library-cards-stack>
+        </div>
+
+        <div style="margin-bottom: 16px">
+            <sb-library-cards-stack [title]="subjects[2]" [contentList]="contentList"
+                [viewMoreButtonText]="viewMoreButtonText" [defaultImg]="defaultImage"
+                (buttonClick)="showAllList($event)">
+            </sb-library-cards-stack>
+        </div>
+    </div>
+</div>

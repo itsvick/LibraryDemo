@@ -1191,6 +1191,8 @@ export class MobileLibraryCardComponent implements OnInit {
     }
   ];
 
+  subjects = ['english', 'mathematics', 'geology', 'biology', 'zoology', 'Botany', 'Environmental Science'];
+
 
   onlineEvent: Observable<Event>;
   offlineEvent: Observable<Event>;
