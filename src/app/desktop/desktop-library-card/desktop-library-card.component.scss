@@ -1,11 +1,9 @@
-@import "../../../../node_modules/sb-styles/assets/mixins/custom-mixins";
 :host {
   .header {
     background-color: #024f9d;
     height: 50px;
     width: 100%;
     color: #ffffff;
-    @include padding(8px);
     padding: 8px 16px;
     font-size: 24px;
     font-weight: bold;

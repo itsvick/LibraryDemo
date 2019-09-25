@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { ConsumptionComponentsModule } from 'consumption-components';
+import { CommonConsumptionModule } from 'test-common-consumption';
 import { MobileLibraryCardComponent } from './mobile/mobile-library-card/mobile-library-card.component';
 import { DesktopLibraryCardComponent } from './desktop/desktop-library-card/desktop-library-card.component';
 import { MasterLibraryComponent } from './demo/master-library/master-library.component';
@@ -19,7 +19,7 @@ import { MasterLibraryComponent } from './demo/master-library/master-library.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ConsumptionComponentsModule
+    CommonConsumptionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

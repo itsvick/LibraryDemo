@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LibraryFiltersLayout } from 'consumption-components';
+import { LibraryFiltersLayout } from 'test-common-consumption';
 
 @Component({
     selector: 'app-master-library',
