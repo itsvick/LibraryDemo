@@ -30,14 +30,14 @@
                 <div style="margin-bottom: 16px">
                     <sb-library-cards-grid [title]="subjects[2]" [contentList]="contentList"
                         [viewMoreButtonText]="viewAllButtonText" (buttonClick)="showAllList($event)"
-                        (cardClick)="cardClick($event)" [cardDisplayCount]="3">
+                        (cardClick)="cardClick($event)" [maxCardCount]="3">
                     </sb-library-cards-grid>
                 </div>
 
 
                 <div style="margin-bottom: 16px">
                     <sb-library-cards-grid [title]="subjects[3]" [contentList]="contentList"
-                        [viewMoreButtonText]="viewAllButtonText" [cardDisplayCount]="4"
+                        [viewMoreButtonText]="viewAllButtonText" [maxCardCount]="4"
                         (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)">
                     </sb-library-cards-grid>
                 </div>
@@ -45,7 +45,7 @@
 
                 <div style="margin-bottom: 16px">
                     <sb-library-cards-grid [title]="subjects[4]" [contentList]="contentList"
-                        [viewMoreButtonText]="viewAllButtonText" [cardDisplayCount]="5"
+                        [viewMoreButtonText]="viewAllButtonText" [maxCardCount]="5"
                         (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)">
                     </sb-library-cards-grid>
                 </div>
@@ -63,14 +63,14 @@
             <div>
                 <div style="margin-bottom: 16px">
                     <sb-library-cards-stack [title]="subjects[0]" [contentList]="contentList"
-                        [viewMoreButtonText]="viewMoreButtonText" [cardDisplayCount]="3"
+                        [viewMoreButtonText]="viewMoreButtonText" [maxCardCount]="3"
                         (buttonClick)="showAllList($event)">
                     </sb-library-cards-stack>
                 </div>
 
                 <div style="margin-bottom: 16px">
                     <sb-library-cards-stack [title]="subjects[1]" [contentList]="contentList"
-                        [viewMoreButtonText]="viewMoreButtonText" [cardDisplayCount]="3"
+                        [viewMoreButtonText]="viewMoreButtonText" [maxCardCount]="3"
                         (buttonClick)="showAllList($event)">
                     </sb-library-cards-stack>
                 </div>

@@ -21,14 +21,14 @@
         <div style="margin-bottom: 16px">
             <sb-library-cards-grid [title]="subjects[2]" [contentList]="contentList"
                 [viewMoreButtonText]="viewAllButtonText" (buttonClick)="showAllList($event)"
-                (cardClick)="cardClick($event)" [cardDisplayCount]="3">
+                (cardClick)="cardClick($event)" [maxCardCount]="3">
             </sb-library-cards-grid>
         </div>
 
 
         <div style="margin-bottom: 16px">
             <sb-library-cards-grid [title]="subjects[3]" [contentList]="contentList"
-                [viewMoreButtonText]="viewAllButtonText" [cardDisplayCount]="4"
+                [viewMoreButtonText]="viewAllButtonText" [maxCardCount]="4"
                 (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)">
             </sb-library-cards-grid>
         </div>
@@ -36,7 +36,7 @@
 
         <div style="margin-bottom: 16px">
             <sb-library-cards-grid [title]="subjects[4]" [contentList]="contentList"
-                [viewMoreButtonText]="viewAllButtonText" [cardDisplayCount]="5"
+                [viewMoreButtonText]="viewAllButtonText" [maxCardCount]="5"
                 (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)">
             </sb-library-cards-grid>
         </div>
@@ -49,8 +49,8 @@
 <sb-library-cards-grid [title]="title" [contentList]="contentList" [viewMoreButtonText]="viewMoreButtonText"
     (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)"></sb-library-cards-grid>
 <sb-library-cards-grid [title]="title" [contentList]="contentList" [viewMoreButtonText]="viewMoreButtonText"
-    (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)" [cardDisplayCount]="3"></sb-library-cards-grid>
+    (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)" [maxCardCount]="3"></sb-library-cards-grid>
 <sb-library-cards-grid [title]="title" [contentList]="contentList" [viewMoreButtonText]="viewMoreButtonText"
-    [cardDisplayCount]="4" (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)"></sb-library-cards-grid>
+    [maxCardCount]="4" (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)"></sb-library-cards-grid>
 <sb-library-cards-grid [title]="title" [contentList]="contentList" [viewMoreButtonText]="viewMoreButtonText"
-    [cardDisplayCount]="5" (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)"></sb-library-cards-grid> -->
+    [maxCardCount]="5" (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)"></sb-library-cards-grid> -->

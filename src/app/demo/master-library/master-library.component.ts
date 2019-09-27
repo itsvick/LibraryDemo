@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { LibraryFiltersLayout } from 'test-common-consumption';
+// our npm published path
+// import { LibraryFiltersLayout } from 'test-common-consumption';
+
+// local or final published path
+import {LibraryFiltersLayout} from '@project-sunbird/common-consumption'
 
 @Component({
     selector: 'app-master-library',
