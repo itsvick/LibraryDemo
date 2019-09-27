@@ -100,7 +100,7 @@ export class MasterLibraryComponent implements OnInit {
                 {
                     "issuerId": "issuerslug-345",
                     "assertionId": "fa2ec612-18da-4048-b146-a8846588a9a5",
-                    "badgeClassImage": "https://ntpstaging.blob.core.windows.net/badgr/uploads/badges/5dfe8927e565723cfb1c2d2fe5a1ac1f.png",
+                    "badgeClassImage": "https://sunbirdstaging.blob.core.windows.net/badgr/uploads/badges/badf0408727b0c90556b5de31829164e.png",
                     "badgeId": "badgeslug-85",
                     "badgeClassName": "Best guide",
                     "createdTS": 1534759115237,
@@ -236,7 +236,7 @@ export class MasterLibraryComponent implements OnInit {
                 {
                     "issuerId": "issuerslug-377",
                     "assertionId": "236121b8-b2fd-4c62-85a9-5f011433f3e8",
-                    "badgeClassImage": "https://ntpstaging.blob.core.windows.net/badgr/uploads/badges/b4ea6f2d3bbd4375195ed74802712b4a.png",
+                    "badgeClassImage": "https://ntpstaging.blob.core.windows.net/badgr/uploads/badges/343f9a93e8c2a82ffe36e9ecfbf363f6.png",
                     "badgeId": "badgeslug-121",
                     "badgeClassName": "Best author",
                     "createdTS": 1545893001107,
@@ -344,7 +344,7 @@ export class MasterLibraryComponent implements OnInit {
                 {
                     "issuerId": "issuerslug-377",
                     "assertionId": "a0f07d96-8a35-4f4e-a233-ee0a09c8fd5c",
-                    "badgeClassImage": "https://ntpstaging.blob.core.windows.net/badgr/uploads/badges/27041728dd75b0b7c8e7e61806e9eccd.png",
+                    "badgeClassImage": "https://ntpstaging.blob.core.windows.net/badgr/uploads/badges/5dfe8927e565723cfb1c2d2fe5a1ac1f.png",
                     "badgeId": "badgeslug-121",
                     "badgeClassName": "Best author",
                     "createdTS": 1545893080571,
@@ -481,7 +481,7 @@ export class MasterLibraryComponent implements OnInit {
                 {
                     "issuerId": "issuerslug-358",
                     "assertionId": "e338fba4-0064-4225-8791-dcac17f80511",
-                    "badgeClassImage": "https://ntpstaging.blob.core.windows.net/badgr/uploads/badges/f350797e550dea70a968ce1bb4b3060b.png",
+                    "badgeClassImage": "https://sunbirdstaging.blob.core.windows.net/badgr/uploads/badges/badf0408727b0c90556b5de31829164e.png",
                     "badgeId": "badgeslug-100",
                     "badgeClassName": "Best book",
                     "createdTS": 1537253744517,
@@ -595,7 +595,7 @@ export class MasterLibraryComponent implements OnInit {
                 {
                     "issuerId": "issuerslug-377",
                     "assertionId": "b02e3191-2418-486e-bf95-f1c8033fb7e7",
-                    "badgeClassImage": "https://ntpstaging.blob.core.windows.net/badgr/uploads/badges/3b66a3de8e92dd6f027042cb902ba418.png",
+                    "badgeClassImage": "https://ntpstaging.blob.core.windows.net/badgr/uploads/badges/343f9a93e8c2a82ffe36e9ecfbf363f6.png",
                     "badgeId": "badgeslug-121",
                     "badgeClassName": "Best author",
                     "createdTS": 1545893133486,
@@ -604,7 +604,7 @@ export class MasterLibraryComponent implements OnInit {
                 {
                     "issuerId": "issuerslug-377",
                     "assertionId": "261e77b4-4b1b-49de-affd-aa3c408138f8",
-                    "badgeClassImage": "https://ntpstaging.blob.core.windows.net/badgr/uploads/badges/634d8d9a413f3e48d8a5330ba7753a00.png",
+                    "badgeClassImage": "https://ntpstaging.blob.core.windows.net/badgr/uploads/badges/343f9a93e8c2a82ffe36e9ecfbf363f6.png",
                     "badgeId": "badgeslug-121",
                     "badgeClassName": "Best author",
                     "createdTS": 1546408540297,
@@ -724,7 +724,7 @@ export class MasterLibraryComponent implements OnInit {
                 {
                     "issuerId": "issuerslug-377",
                     "assertionId": "f9554ba0-5958-4a97-b20a-d0d7a04360b1",
-                    "badgeClassImage": "https://ntpstaging.blob.core.windows.net/badgr/uploads/badges/3549b0881ddf5025736e7baf5b027dcf.png",
+                    "badgeClassImage": "https://ntpstaging.blob.core.windows.net/badgr/uploads/badges/343f9a93e8c2a82ffe36e9ecfbf363f6.png",
                     "badgeId": "badgeslug-121",
                     "badgeClassName": "Best author",
                     "createdTS": 1545893013408,
@@ -1283,7 +1283,7 @@ export class MasterLibraryComponent implements OnInit {
                 {
                     "issuerId": "issuerslug-345",
                     "assertionId": "fa2ec612-18da-4048-b146-a8846588a9a5",
-                    "badgeClassImage": "https://ntpstaging.blob.core.windows.net/badgr/uploads/badges/5dfe8927e565723cfb1c2d2fe5a1ac1f.png",
+                    "badgeClassImage": "https://sunbirdstaging.blob.core.windows.net/badgr/uploads/badges/badf0408727b0c90556b5de31829164e.png",
                     "badgeId": "badgeslug-85",
                     "badgeClassName": "Best guide",
                     "createdTS": 1534759115237,
@@ -1419,7 +1419,7 @@ export class MasterLibraryComponent implements OnInit {
                 {
                     "issuerId": "issuerslug-377",
                     "assertionId": "236121b8-b2fd-4c62-85a9-5f011433f3e8",
-                    "badgeClassImage": "https://ntpstaging.blob.core.windows.net/badgr/uploads/badges/b4ea6f2d3bbd4375195ed74802712b4a.png",
+                    "badgeClassImage": "https://ntpstaging.blob.core.windows.net/badgr/uploads/badges/343f9a93e8c2a82ffe36e9ecfbf363f6.png",
                     "badgeId": "badgeslug-121",
                     "badgeClassName": "Best author",
                     "createdTS": 1545893001107,
