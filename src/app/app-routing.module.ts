@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DesktopLibraryCardComponent } from './desktop/desktop-library-card/desktop-library-card.component';
 import { MobileLibraryCardComponent } from './mobile/mobile-library-card/mobile-library-card.component';
 import { MasterLibraryComponent } from './demo/master-library/master-library.component';
+import { ContentPlayComponent } from './desktop/content-play/content-play.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'library',
     component: MasterLibraryComponent
+  },
+  {
+    path: 'content-play',
+    component: ContentPlayComponent
   },
   {
     path: '',

@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "local": "npm i /mnt/d/projects/2019/ekstep/SunbirdEd-consumption-ngcomponents/dist/common-consumption && ng serve --port 5000"
   },
   "private": true,
   "dependencies": {
@@ -19,7 +20,8 @@
     "@angular/platform-browser": "~7.1.0",
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
-    "common-consumption-styles": "0.0.1",
+    "@project-sunbird/common-consumption": "file:../SunbirdEd-consumption-ngcomponents/dist/common-consumption",
+    "common-consumption-styles": "0.0.2",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "test-common-consumption": "0.0.1",
