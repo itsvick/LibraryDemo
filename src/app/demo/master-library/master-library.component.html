@@ -8,20 +8,20 @@
                 Desktop Library Cards
             </h2>
             <div>
-                <sb-library-filters [list]="mediums" [layout]="mediumLayout"></sb-library-filters>
-                <sb-library-filters [list]="classes" [layout]="classLayout"></sb-library-filters>
+                <sb-library-filters [list]="mediums" [layout]="mediumLayout" [selectedItems]="[7]" (selectedFilter)="selectedFilter($event)"></sb-library-filters>
+                <sb-library-filters [list]="classes" [layout]="classLayout" (selectedFilter)="selectedFilter($event)"></sb-library-filters>
             </div>
             <div>
                 <div style="margin-bottom: 16px">
                     <sb-library-cards-grid [title]="subjects[0]" [contentList]="contentList1"
-                        [viewMoreButtonText]="viewAllButtonText" (buttonClick)="showAllList($event)"
+                        [viewMoreButtonText]="viewAllButtonText" (viewMoreClick)="showAllList($event)"
                         (cardClick)="cardClick($event)">
                     </sb-library-cards-grid>
                 </div>
 
                 <div style="margin-bottom: 16px">
                     <sb-library-cards-grid [title]="subjects[1]" [contentList]="contentList"
-                        [viewMoreButtonText]="viewAllButtonText" (buttonClick)="showAllList($event)"
+                        [viewMoreButtonText]="viewAllButtonText" (viewMoreClick)="showAllList($event)"
                         (cardClick)="cardClick($event)">
                     </sb-library-cards-grid>
                 </div>
@@ -29,7 +29,7 @@
 
                 <div style="margin-bottom: 16px">
                     <sb-library-cards-grid [title]="subjects[2]" [contentList]="contentList"
-                        [viewMoreButtonText]="viewAllButtonText" (buttonClick)="showAllList($event)"
+                        [viewMoreButtonText]="viewAllButtonText" (viewMoreClick)="showAllList($event)"
                         (cardClick)="cardClick($event)" [maxCardCount]="3">
                     </sb-library-cards-grid>
                 </div>
@@ -37,16 +37,16 @@
 
                 <div style="margin-bottom: 16px">
                     <sb-library-cards-grid [title]="subjects[3]" [contentList]="contentList"
-                        [viewMoreButtonText]="viewAllButtonText" [maxCardCount]="4"
-                        (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)">
+                        [viewMoreButtonText]="viewAllButtonText" [maxCardCount]="4" (viewMoreClick)="showAllList($event)"
+                        (cardClick)="cardClick($event)">
                     </sb-library-cards-grid>
                 </div>
 
 
                 <div style="margin-bottom: 16px">
                     <sb-library-cards-grid [title]="subjects[4]" [contentList]="contentList"
-                        [viewMoreButtonText]="viewAllButtonText" [maxCardCount]="5"
-                        (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)">
+                        [viewMoreButtonText]="viewAllButtonText" [maxCardCount]="5" (viewMoreClick)="showAllList($event)"
+                        (cardClick)="cardClick($event)">
                     </sb-library-cards-grid>
                 </div>
 
@@ -57,31 +57,30 @@
                 Mobile Library Cards
             </h2>
             <div>
-                <sb-library-filters [list]="mediums" [layout]="mediumLayout"></sb-library-filters>
-                <sb-library-filters [list]="classes" [layout]="classLayout"></sb-library-filters>
+                <sb-library-filters [list]="mediums" [layout]="mediumLayout" (selectedFilter)="selectedFilter($event)"></sb-library-filters>
+                <sb-library-filters [list]="classes" [layout]="classLayout" (selectedFilter)="selectedFilter($event)"></sb-library-filters>
             </div>
             <div>
                 <div style="margin-bottom: 16px">
                     <sb-library-cards-stack [title]="subjects[0]" [contentList]="contentList"
                         [viewMoreButtonText]="viewMoreButtonText" [maxCardCount]="3"
-                        (buttonClick)="showAllList($event)">
+                        (viewMoreClick)="showAllList($event)">
                     </sb-library-cards-stack>
                 </div>
 
                 <div style="margin-bottom: 16px">
                     <sb-library-cards-stack [title]="subjects[1]" [contentList]="contentList"
                         [viewMoreButtonText]="viewMoreButtonText" [maxCardCount]="3"
-                        (buttonClick)="showAllList($event)">
+                        (viewMoreClick)="showAllList($event)">
                     </sb-library-cards-stack>
                 </div>
 
                 <div style="margin-bottom: 16px">
                     <sb-library-cards-stack [title]="subjects[2]" [contentList]="contentList"
                         [viewMoreButtonText]="viewMoreButtonText" [defaultImg]="defaultImage"
-                        (buttonClick)="showAllList($event)">
+                        (viewMoreClick)="showAllList($event)">
                     </sb-library-cards-stack>
                 </div>
-
             </div>
         </div>
     </div>

@@ -1,14 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone, ChangeDetectionStrategy } from '@angular/core';
 // our npm published path
-// import { LibraryFiltersLayout } from 'test-common-consumption';
 
 // local or final published path
-import {LibraryFiltersLayout} from '@project-sunbird/common-consumption'
+import { LibraryFiltersLayout } from '@project-sunbird/common-consumption';
+import { ChangeDetectorRef } from '@angular/core';
 
 @Component({
     selector: 'app-master-library',
     templateUrl: './master-library.component.html',
-    styleUrls: ['./master-library.component.scss']
+    styleUrls: ['./master-library.component.scss'],
+    changeDetection:ChangeDetectionStrategy.Default
 })
 export class MasterLibraryComponent implements OnInit {
 
@@ -1456,31 +1457,32 @@ export class MasterLibraryComponent implements OnInit {
     viewAllButtonText = 'View all';
     viewMoreButtonText = 'View More';
 
-    subjects = ['english', 'mathematics', 'geology', 'biology', 'zoology', 'Botany', 'Environmental Science'];
-    mediums = [
-        { text: 'english', active: true },
-        { text: 'mathematics', active: false, },
-        { text: 'geology', active: false },
-        { text: 'biology', active: false },
-        { text: 'zoology', active: false },
-        { text: 'Botany', active: false },
-        { text: 'Environmental Science', active: false }
+    public subjects = ['english', 'mathematics', 'geology', 'biology', 'zoology', 'Botany', 'Environmental Science'];
+    public mediums = [
+        'english',
+        'mathematics',
+        'geology',
+        'biology',
+        'zoology',
+        'Botany',
+        'Environmental Science'
     ];
 
     classes = [
-        { text: 'Class 1', active: false },
-        { text: 'Class 2', active: false },
-        { text: 'Class 3', active: false },
-        { text: 'Class 4', active: false },
-        { text: 'Class 5', active: false },
-        { text: 'Class 6', active: true },
-        { text: 'Class 7', active: false }
+        'Class 1',
+        'Class 2',
+        'Class 3',
+        'Class 4',
+        'Class 5',
+        'Class 6',
+        'Class 7'
     ]
 
     mediumLayout = LibraryFiltersLayout.SQUARE;
     classLayout = LibraryFiltersLayout.ROUND;
 
-    constructor() { }
+    constructor(private ref: ChangeDetectorRef) {
+    }
 
     ngOnInit() {
     }
@@ -1491,5 +1493,16 @@ export class MasterLibraryComponent implements OnInit {
 
     cardClick(event) {
         console.log("cardClick", event);
+    }
+
+    selectedFilter(event) {
+        console.log("selected Filter", event);
+    }
+
+    addMedium(med) {
+        // this.mediums.push(med);
+        this.mediums = [...this.mediums, 'asasadfdf'];
+        console.log("mediums", this.mediums);
+        // this.ref.detectChanges();
     }
 }
