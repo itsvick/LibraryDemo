@@ -2,6 +2,14 @@
     <div class="header">
         Library Cards
     </div>
+    <div class="cards-container" style="margin:16px;">
+        <div class="item show-4" *ngFor="let content of contentList | slice:0:4">
+            <sb-library-card [content]="content" [isRecentlyViewed]="true" [isMobile]="true" (click)="cardClick($event)"></sb-library-card>
+        </div>
+    </div>
+    <div class="header">
+        Library Cards
+    </div>
     <div class="container">
         <div style="margin-bottom: 16px">
             <sb-library-cards-grid [title]="subjects[0]" [contentList]="contentList1"
@@ -28,16 +36,16 @@
 
         <div style="margin-bottom: 16px">
             <sb-library-cards-grid [title]="subjects[3]" [contentList]="contentList"
-                [viewMoreButtonText]="viewAllButtonText" [maxCardCount]="4"
-                (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)">
+                [viewMoreButtonText]="viewAllButtonText" [maxCardCount]="4" (buttonClick)="showAllList($event)"
+                (cardClick)="cardClick($event)">
             </sb-library-cards-grid>
         </div>
 
 
         <div style="margin-bottom: 16px">
             <sb-library-cards-grid [title]="subjects[4]" [contentList]="contentList"
-                [viewMoreButtonText]="viewAllButtonText" [maxCardCount]="5"
-                (buttonClick)="showAllList($event)" (cardClick)="cardClick($event)">
+                [viewMoreButtonText]="viewAllButtonText" [maxCardCount]="5" (buttonClick)="showAllList($event)"
+                (cardClick)="cardClick($event)">
             </sb-library-cards-grid>
         </div>
 

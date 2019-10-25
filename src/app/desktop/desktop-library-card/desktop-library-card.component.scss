@@ -14,4 +14,38 @@
     padding: 8px 16px;
     box-sizing: border-box;
   }
+
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    margin: 0 -15px;
+    .item {
+      padding: 0 15px;
+      box-sizing: border-box;
+      &.show-3 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+      }
+
+      &.show-4 {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+      &.show-5 {
+        flex: 0 0 20%;
+        max-width: 20%;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .cards-container {
+      .item {
+        flex: 0 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
