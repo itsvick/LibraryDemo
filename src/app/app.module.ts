@@ -11,7 +11,6 @@ import { ContentPlayComponent } from './desktop/content-play/content-play.compon
 
 
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
-import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [

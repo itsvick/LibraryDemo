@@ -1,0 +1,62 @@
+@import "../../../node_modules/common-consumption-styles/assets/styles";
+
+:host {
+  --page-padding-x: 32px;
+  box-sizing: border-box;
+  .page-wrapper {
+    background-color: $primary-100; // TODO color needs to recheck
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .header {
+    height: 70px;
+    width: 100%;
+    transform: scaleY(-1);
+    background-color: $white;
+  }
+
+  .nav-bar {
+    height: 36px;
+    width: 100%;
+    padding: 8px var(--page-padding-x) 0;
+    background-color: $primary-100; // TODO color needs to recheck
+
+    .nav-item {
+      padding: 0 5px;
+      span {
+        border-radius: 5px 5px 0 0;
+        height: 28px;
+        min-width: 95px;
+        background-color: #bac9d8; //TODO color needs to recheck
+        color: #024f9d;
+        line-height: 17px;
+        font-size: 12px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .scrollable-container {
+    .filter {
+      .medium-filter {
+        padding: 8px var(--page-padding-x) 0;
+        height: 64px;
+        width: inherit;
+        background-color: $white; // TODO needs to recheck
+      }
+
+      .class-filter {
+        padding: 8px var(--page-padding-x) 0;
+        height: 48px;
+        width: inherit;
+        background-color: #f0f0f0; // TODO needs to recheck
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+    }
+    .container {
+      overflow-y: auto;
+      padding: 24px var(--page-padding-x);
+    }
+  }
+}
