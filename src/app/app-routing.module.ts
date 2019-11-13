@@ -4,6 +4,7 @@ import { DesktopLibraryCardComponent } from './desktop/desktop-library-card/desk
 import { MobileLibraryCardComponent } from './mobile/mobile-library-card/mobile-library-card.component';
 import { MasterLibraryComponent } from './demo/master-library/master-library.component';
 import { ContentPlayComponent } from './desktop/content-play/content-play.component';
+import { FaqComponent } from './faq/faq.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'content-play',
     component: ContentPlayComponent
+  },
+  {
+    path: 'faq',
+    component: FaqComponent
   },
   {
     path: '',
