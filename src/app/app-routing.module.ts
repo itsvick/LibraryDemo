@@ -5,6 +5,7 @@ import { MobileLibraryCardComponent } from './mobile/mobile-library-card/mobile-
 import { MasterLibraryComponent } from './demo/master-library/master-library.component';
 import { ContentPlayComponent } from './desktop/content-play/content-play.component';
 import { FaqComponent } from './faq/faq.component';
+import { OfflineLibraryPageModule } from './offline-library-page/offline-library-page.module';
 
 
 const routes: Routes = [
@@ -25,6 +26,10 @@ const routes: Routes = [
     component: ContentPlayComponent
   },
   {
+    path: 'offline-library',
+    loadChildren: './offline-library-page/offline-library-page.module#OfflineLibraryPageModule'
+  },
+  {
     path: 'faq',
     component: FaqComponent
   },
@@ -36,7 +41,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
 export class AppRoutingModule { }
