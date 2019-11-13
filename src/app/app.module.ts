@@ -11,6 +11,8 @@ import { ContentPlayComponent } from './desktop/content-play/content-play.compon
 
 
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
+import { CommonModule } from '@angular/common';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
     MobileLibraryCardComponent,
     DesktopLibraryCardComponent,
     MasterLibraryComponent,
-    ContentPlayComponent
+    ContentPlayComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
