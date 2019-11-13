@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { fromEvent, Observable, Subscription } from 'rxjs';
 import { contents } from './data';
+import { LibraryCardTypes } from '@project-sunbird/common-consumption';
 
 @Component({
   selector: 'app-desktop-library-card',
@@ -1193,6 +1194,8 @@ export class DesktopLibraryCardComponent implements OnInit {
     ];
 
     contentList1 = contents;
+
+    recentlyViewedCard: LibraryCardTypes = LibraryCardTypes.RECENTLY_VIEWED;
 
     title = 'desktopLibTest';
     viewAllButtonText = 'View all';
