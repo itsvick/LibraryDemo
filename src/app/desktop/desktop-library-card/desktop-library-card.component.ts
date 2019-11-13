@@ -4,9 +4,9 @@ import { contents } from './data';
 import { LibraryCardTypes } from '@project-sunbird/common-consumption';
 
 @Component({
-  selector: 'app-desktop-library-card',
-  templateUrl: './desktop-library-card.component.html',
-  styleUrls: ['./desktop-library-card.component.scss']
+    selector: 'app-desktop-library-card',
+    templateUrl: './desktop-library-card.component.html',
+    styleUrls: ['./desktop-library-card.component.scss']
 })
 export class DesktopLibraryCardComponent implements OnInit {
     defaultImage = 'assets/imgs/default.png';
@@ -125,7 +125,8 @@ export class DesktopLibraryCardComponent implements OnInit {
             "compatibilityLevel": 2,
             "board": "CBSE",
             "resourceType": "Learn",
-            "node_id": 409230
+            "node_id": 409230,
+            "cardImg": "https://ekstep-public-qa.s3-ap-south-1.amazonaws.com/content/do_2124899901836247041294/artifact/0306022-1.jpg_1524657005308.jpg"
         },
         {
             "ownershipType": [
@@ -262,7 +263,8 @@ export class DesktopLibraryCardComponent implements OnInit {
             "attribution": "test",
             "board": "CBSE",
             "resourceType": "Test",
-            "node_id": 199891
+            "node_id": 199891,
+            "cardImg": "https://ekstep-public-qa.s3-ap-south-1.amazonaws.com/content/do_2125047996214067201105/artifact/1466505161547apple.thumb.png"
         },
         {
             "ownershipType": [
@@ -376,7 +378,8 @@ export class DesktopLibraryCardComponent implements OnInit {
             "ownedBy": "0125683555607347207",
             "board": "CBSE",
             "resourceType": "Test",
-            "node_id": 446923
+            "node_id": 446923,
+            "cardImg": "https://ntpstagingall.blob.core.windows.net/ntp-content-staging/content/do_21266324379998617614877/artifact/icon_1545638427515.thumb.png"
         },
         {
             "ownershipType": [
@@ -508,7 +511,8 @@ export class DesktopLibraryCardComponent implements OnInit {
             "compatibilityLevel": 2,
             "board": "CBSE",
             "resourceType": "Learn",
-            "node_id": 425893
+            "node_id": 425893,
+            "cardImg": "https://ekstep-public-qa.s3-ap-south-1.amazonaws.com/content/do_21258040361213952015738/artifact/download-3_1531474695189.thumb.jpg"
         },
         {
             "ownershipType": [
@@ -629,7 +633,8 @@ export class DesktopLibraryCardComponent implements OnInit {
             "compatibilityLevel": 4,
             "board": "CBSE",
             "resourceType": "Practice",
-            "node_id": 377569
+            "node_id": 377569,
+            "cardImg": "https://ekstep-public-qa.s3-ap-south-1.amazonaws.com/content/do_21252611650918809611434/artifact/localhost_1524724918337.thumb.png"
         },
         {
             "ownershipType": [
@@ -751,7 +756,8 @@ export class DesktopLibraryCardComponent implements OnInit {
             "compatibilityLevel": 2,
             "board": "State (Rajasthan)",
             "resourceType": "Test",
-            "node_id": 378177
+            "node_id": 378177,
+            "cardImg": "https://ekstep-public-qa.s3-ap-south-1.amazonaws.com/content/do_21252884005676646411974/artifact/3_1519885914935.thumb.jpg"
         },
         {
             "ownershipType": [
@@ -967,7 +973,8 @@ export class DesktopLibraryCardComponent implements OnInit {
             "compatibilityLevel": 4,
             "board": "MSCERT",
             "resourceType": "Practice",
-            "node_id": 149315
+            "node_id": 149315,
+            "cardImg": "https://ekstep-public-qa.s3-ap-south-1.amazonaws.com/content/do_2125005681201643521507/artifact/111-600x375_1522638521957.thumb.jpg"
         },
         {
             "ownershipType": [
@@ -1085,7 +1092,8 @@ export class DesktopLibraryCardComponent implements OnInit {
             "ownedBy": "b9a3972c-a2ba-46fa-9279-59ce21957a83",
             "board": "State (Tamil Nadu)",
             "resourceType": "Test",
-            "node_id": 440472
+            "node_id": 440472,
+            "cardImg": "https://ntpstagingall.blob.core.windows.net/ntp-content-staging/content/do_21264270761184460811673/artifact/0288d78758c4463dd40892d5a460edf4_1478578597914.thumb.jpeg"
         },
         {
             "ownershipType": [
@@ -1189,7 +1197,8 @@ export class DesktopLibraryCardComponent implements OnInit {
             "compatibilityLevel": 2,
             "board": "State (Andhra Pradesh)",
             "resourceType": "Teach",
-            "node_id": 428793
+            "node_id": 428793,
+            "cardImg": "https://ekstep-public-qa.s3-ap-south-1.amazonaws.com/content/do_21259106171407564812108/artifact/beee6757847b84a1e41ce827ae02ccc7_1477485749628.thumb.jpeg"
         }
     ];
 
@@ -1204,58 +1213,58 @@ export class DesktopLibraryCardComponent implements OnInit {
     subjects = ['english', 'mathematics', 'geology', 'biology', 'zoology', 'Botany', 'Environmental Science'];
 
 
-  onlineEvent: Observable<Event>;
-  offlineEvent: Observable<Event>;
-  subscriptions: Subscription[] = [];
+    onlineEvent: Observable<Event>;
+    offlineEvent: Observable<Event>;
+    subscriptions: Subscription[] = [];
 
-  isOnlineMessage: string;
-  isOnline: boolean;
-
-
-  test() {
-    alert("clicked");
-  }
-
-  ngOnInit() {
-    /**
-* Get the online/offline status from browser window
-*/
-    this.onlineEvent = fromEvent(window, 'online');
-    this.offlineEvent = fromEvent(window, 'offline');
-
-    this.subscriptions.push(this.onlineEvent.subscribe(e => {
-      console.log("ONLINE", e);
-      this.isOnline = true;
-
-      this.contentList.forEach((content) => {
-        content.appIcon = 'https://dummyimage.com/600x400/000/fff';
-      });
-    }));
-
-    this.subscriptions.push(this.offlineEvent.subscribe(e => {
-      console.log("OFFLINE", e);
-
-      this.contentList.forEach((content) => {
-        content.appIcon = 'assets/imgs/offline.jpg';
-      });
-      this.isOnline = false;
-    }));
-  }
+    isOnlineMessage: string;
+    isOnline: boolean;
 
 
-  ngOnDestroy(): void {
-    /**
-    * Unsubscribe all subscriptions to avoid memory leak
+    test() {
+        alert("clicked");
+    }
+
+    ngOnInit() {
+        /**
+    * Get the online/offline status from browser window
     */
-    this.subscriptions.forEach(subscription => subscription.unsubscribe());
-  }
+        this.onlineEvent = fromEvent(window, 'online');
+        this.offlineEvent = fromEvent(window, 'offline');
 
-  showAllList(data) {
-    console.log('Event inside consumer -- ', data);
-  }
+        this.subscriptions.push(this.onlineEvent.subscribe(e => {
+            console.log("ONLINE", e);
+            this.isOnline = true;
 
-  cardClick(data){
-    console.log('Event inside consumer', data);
-  }
+            this.contentList.forEach((content) => {
+                content.appIcon = 'https://dummyimage.com/600x400/000/fff';
+            });
+        }));
+
+        this.subscriptions.push(this.offlineEvent.subscribe(e => {
+            console.log("OFFLINE", e);
+
+            this.contentList.forEach((content) => {
+                content.appIcon = 'assets/imgs/offline.jpg';
+            });
+            this.isOnline = false;
+        }));
+    }
+
+
+    ngOnDestroy(): void {
+        /**
+        * Unsubscribe all subscriptions to avoid memory leak
+        */
+        this.subscriptions.forEach(subscription => subscription.unsubscribe());
+    }
+
+    showAllList(data) {
+        console.log('Event inside consumer -- ', data);
+    }
+
+    cardClick(data) {
+        console.log('Event inside consumer', data);
+    }
 
 }
