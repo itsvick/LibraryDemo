@@ -1205,7 +1205,7 @@ export class DesktopLibraryCardComponent implements OnInit {
     contentList1 = contents;
 
     recentlyViewedCard: LibraryCardTypes = LibraryCardTypes.RECENTLY_VIEWED;
-
+    qrcodeResultCard: LibraryCardTypes = LibraryCardTypes.QRCODE_RESULT;
     title = 'desktopLibTest';
     viewAllButtonText = 'View all';
     viewMoreButtonText = 'View More';

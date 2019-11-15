@@ -49,5 +49,18 @@
             </sb-library-cards-grid>
         </div>
 
+        <div style="margin-bottom: 16px">
+            <div class="header">
+                QR code scan result cards
+            </div>
+            <div class="cards-container" style="margin:16px;">
+                <div class="item show-4" *ngFor="let content of contentList | slice:0:4">
+                    <sb-library-card [content]="content" [type]="qrcodeResultCard" (click)="cardClick($event)" [cardImg]="content?.appIcon" [moreInfoLabel]="'Section'">
+
+                    </sb-library-card>
+                </div>
+            </div>
+            
+        </div>
     </div>
 </div>
