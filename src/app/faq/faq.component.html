@@ -1,4 +1,7 @@
-<p>
-  faq works!
-  <sb-faq></sb-faq>
-</p>
+<div class="main-header" style="text-align:center">
+    Frequently Asked Questions (FAQs)
+</div>
+<div class="container" style="width: 800px; margin: 0 auto;">
+    <sb-faq (toggleGroupEvent)="handleEvents($event);" (yesClickedEvent)="handleEvents($event);"
+        (noClickedEvent)="handleEvents($event);" (submitClickedEvent)="handleEvents($event);"></sb-faq>
+</div>

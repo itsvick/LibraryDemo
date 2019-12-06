@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "npm i E:/projects/sunbird-workspace/SunbirdEd-consumption-ngcomponents/dist/common-consumption && ng serve",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "stats": "ng build --prod --stats-json && webpack-bundle-analyzer dist/desktopLibTest/stats.json"
@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
     "@project-sunbird/common-consumption": "file:../SunbirdEd-consumption-ngcomponents/dist/common-consumption",
-    "common-consumption-styles": "0.0.2",
+    "common-consumption-styles": "~0.0.7",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",

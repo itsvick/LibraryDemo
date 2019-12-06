@@ -2,15 +2,42 @@
     <div class="header">
         Library Cards
     </div>
-    <div class="cards-container" style="margin:16px;">
-        <div class="item show-4" *ngFor="let content of contentList | slice:0:4">
-            <sb-library-card [content]="content" [type]="recentlyViewedCard" [isMobile]="true" (click)="cardClick($event)" [cardImg]="content?.appIcon"></sb-library-card>
-        </div>
-    </div>
-    <div class="header">
-        Library Cards
-    </div>
     <div class="container">
+        <div class="sub-header">Recently Viewed Cards</div>
+        <div class="cards-container" style="margin:16px;">
+            <div class="item show-4" *ngFor="let content of contentList | slice:0:4">
+                <sb-library-card [content]="content" [type]="recentlyViewedCard" 
+                    (click)="cardClick($event)" [cardImg]="content?.appIcon"></sb-library-card>
+            </div>
+        </div>
+
+        <div class="sub-header">Recently Viewed Cards With Hover</div>
+        <div class="cards-container" style="margin:16px;">
+
+            <div class="item show-4" *ngFor="let content of contentList | slice:0:4; let index= index">
+                <sb-library-card [content]="content" [type]="recentlyViewedCard" 
+                    (click)="cardClick($event)" [cardImg]="content?.appIcon" 
+                    [hover-template]="hoverTemplate">
+
+                    <ng-template #hoverTemplate let-hoverData="hoverData">
+                        <sb-card-hover class="card-hover" [hoverData]="hoverData"
+                            (hoverActionClick)="hoverActionClicked($event)">
+                        </sb-card-hover>
+                        <!-- <div class="card-hover" style="background-color: rgba(0,0,0,0.8);">
+                            <h2 style="color:#00ff4a">Christy</h2>
+                            <p style="color:#fff; opacity: 0.7;">Christopher Fernandes</p>
+                        </div> -->
+
+                    </ng-template>
+
+                </sb-library-card>
+            </div>
+        </div>
+        <!-- <div class="header">
+        Library Cards
+    </div> -->
+
+        <div class="sub-header">Library Cards Grid</div>
         <div style="margin-bottom: 16px">
             <sb-library-cards-grid [title]="subjects[0]" [contentList]="contentList1"
                 [viewMoreButtonText]="viewAllButtonText" (buttonClick)="showAllList($event)"
@@ -50,17 +77,16 @@
         </div>
 
         <div style="margin-bottom: 16px">
-            <div class="header">
-                QR code scan result cards
-            </div>
+            <div class="sub-header">QR scan results cards</div>
             <div class="cards-container" style="margin:16px;">
                 <div class="item show-4" *ngFor="let content of contentList | slice:0:4">
-                    <sb-library-card [content]="content" [type]="qrcodeResultCard" (click)="cardClick($event)" [cardImg]="content?.appIcon" [moreInfoLabel]="'Section'">
+                    <sb-library-card [content]="content" [type]="qrcodeResultCard" (click)="cardClick($event)"
+                        [cardImg]="content?.appIcon" [moreInfoLabel]="'Section'" [section]="'Bharath Pyar'">
 
                     </sb-library-card>
                 </div>
             </div>
-            
+
         </div>
     </div>
 </div>

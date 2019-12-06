@@ -21,7 +21,7 @@ import { FaqComponent } from './faq/faq.component';
     DesktopLibraryCardComponent,
     MasterLibraryComponent,
     ContentPlayComponent,
-    FaqComponent
+    FaqComponent,
   ],
   imports: [
     BrowserModule,
