@@ -138,7 +138,8 @@ export class MasterLibraryComponent implements OnInit {
         "actions": [
           {
             "type": "save",
-            "label": "Save to pendrive"
+            "label": "Save to pendrive",
+            "disabled": true
           },
           {
             "type": "open",
@@ -1331,6 +1332,8 @@ export class MasterLibraryComponent implements OnInit {
       }
     }
   ];
+
+  mimeTypeFilters = ['all', 'video', 'interaction', 'docs'];
 
 
   contentList1 = contents;

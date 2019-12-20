@@ -19,8 +19,8 @@
                     (click)="cardClick($event)" [cardImg]="content?.appIcon" 
                     [hover-template]="hoverTemplate">
 
-                    <ng-template #hoverTemplate let-hoverData="hoverData">
-                        <sb-card-hover class="card-hover" [hoverData]="hoverData"
+                    <ng-template #hoverTemplate let-hoverData="hoverData" let-content="content">
+                        <sb-card-hover class="card-hover" [hoverData]="hoverData" [content]="content"
                             (hoverActionClick)="hoverActionClicked($event)">
                         </sb-card-hover>
                         <!-- <div class="card-hover" style="background-color: rgba(0,0,0,0.8);">

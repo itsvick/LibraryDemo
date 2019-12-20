@@ -2,32 +2,15 @@
     <div class="main-header">
         Library Cards
     </div>
-    <div>
 
-        <!-- <div>
-            <sb-toc-item [tocData]="contentList"></sb-toc-item>
-        </div>
-        <div>
-            <sb-accordion>
-                <sb-accordion-item>
-                    <sb-accordion-header>
-                        <span class="title">Christy Header from component library</span>
-                    </sb-accordion-header>
-                    <sb-accordion-body>
-                        Christy body from component library
-
-                        <sb-toc-card></sb-toc-card>
-                    </sb-accordion-body>
-                </sb-accordion-item>
-            </sb-accordion>
-        </div> -->
-    </div>
     <div class="container">
         <div class="item desktop ">
             <div>
                 <sb-library-filters [list]="mediums" [layout]="mediumLayout" [selectedItems]="[7]"
                     (selectedFilter)="selectedFilter($event)"></sb-library-filters>
                 <sb-library-filters [list]="classes" [layout]="classLayout" (selectedFilter)="selectedFilter($event)">
+                </sb-library-filters>
+                <sb-library-filters [list]="mimeTypeFilters" [layout]="'round-with-icon'" (selectedMimeType)="selectedFilter($event)">
                 </sb-library-filters>
             </div>
             <div>

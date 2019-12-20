@@ -53,7 +53,7 @@
     }
     .sbtoc-area {
     grid-row: 1 / span 3;
-    margin-top: -88px;
+    // margin-top: -88px;
     }
   }
   .aspectratio {
@@ -79,7 +79,7 @@
     height: 100%;
     
     /* visualize the box */
-    background: lightgreen;
+    background: rgba(0,0,0,0.7);
     
     /* center my children */
     display: flex;

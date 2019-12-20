@@ -1,20 +1,34 @@
 <div class="sb-back-bar"><div class="ui container"><h4 style="font-size: 14px;"><i class="icon arrow left"></i> Back to Library</h4></div></div>
 
-<div class="ui container sbcolumn-container-grid mt-24">
+<div class="ui container sbcolumn-container-grid mt-24" style="background-color: #E5EDF5; padding: 0 24px">
   <div class="sbplayer-area grid-item">
     
       <div class="aspectratio" data-ratio="16:9">
           <div>
             <p>16:9</p>
+            <p>{{activeContent?.name}}</p>
           </div>
       </div>
 
   </div>
 
   <div class="sbtoc-area grid-item">
-    <sb-player-toc></sb-player-toc>
+    <div class="sbtoc-filter sbtoc-filter--bg-gray sbsmartscroll-style">
+      <sb-library-filters [list]="mimeTypeFilters" [layout]="'round-with-icon'" (selectedMimeType)="selectedFilter($event)">
+      </sb-library-filters>
+    </div>
+    <div>
+      <sb-toc-item [tocData]="tocContent5" [activeMimeTypeFilter]="activeMimeTypeFilter" [activeContent]="activeContent" (tocCardClick)="tocCardClickHandler($event)"></sb-toc-item>
+    </div>
+    
   </div>
 
+  <!-- <div class="sbtoc-area grid-item">
+    <div>
+        <sb-player-toc ></sb-player-toc>
+    </div>
+  </div> -->
+  
   <div class="sbplayer-info-area grid-item">Player Description</div>
   <div class="sbplayer-meta-area grid-item">Player Meta Data</div>
 </div>
