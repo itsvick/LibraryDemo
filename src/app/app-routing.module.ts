@@ -5,8 +5,7 @@ import { MobileLibraryCardComponent } from './mobile/mobile-library-card/mobile-
 import { MasterLibraryComponent } from './demo/master-library/master-library.component';
 import { ContentPlayComponent } from './desktop/content-play/content-play.component';
 import { FaqComponent } from './faq/faq.component';
-import { OfflineLibraryPageModule } from './offline-library-page/offline-library-page.module';
-
+import { PlayerActionComponent } from './desktop/player-action/player-action.component';
 
 const routes: Routes = [
   {
@@ -24,6 +23,10 @@ const routes: Routes = [
   {
     path: 'content-play',
     component: ContentPlayComponent
+  },
+  {
+    path: 'play-action',
+    component: PlayerActionComponent
   },
   {
     path: 'offline-library',
