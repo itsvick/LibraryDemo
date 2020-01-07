@@ -11,7 +11,7 @@ import { ContentPlayComponent } from './desktop/content-play/content-play.compon
 
 
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
-import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FaqComponent } from './faq/faq.component';
 import { PlayerActionComponent } from './desktop/player-action/player-action.component';
 
@@ -24,9 +24,10 @@ import { PlayerActionComponent } from './desktop/player-action/player-action.com
     ContentPlayComponent,
     FaqComponent,
     PlayerActionComponent,
+
   ],
   imports: [
-    BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     CommonConsumptionModule
   ],

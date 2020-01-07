@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {toc1} from './tocdata';
+import { toc1 } from './tocdata';
 
 @Component({
   selector: 'app-content-play',
@@ -5026,7 +5026,7 @@ export class ContentPlayComponent implements OnInit {
     "orgDetails": {}
   };
 
-  public tocContent4 =  {
+  public tocContent4 = {
     "ownershipType": [
       "createdBy"
     ],
@@ -41391,21 +41391,11 @@ export class ContentPlayComponent implements OnInit {
       "email": "vidyasagar@ekstep.org",
       "orgName": "EKSTEP"
     }
-  
+
   }
 
-  public tocContent8 = {
-    "id": "api.course.hierarchy",
-    "params": {
-      "resmsgid": "dab87e90-29f2-11ea-a696-cd9210b3b08f",
-      "msgid": "7524a754-ea2f-1e51-03ce-bc87e4076f2a",
-      "status": "successful",
-      "err": null,
-      "errmsg": null
-    },
-    "responseCode": "OK",
-    "result": {
-      "content": {
+  public tocContent9 = 
+       {
         "ownershipType": [
           "createdBy"
         ],
@@ -65295,23 +65285,1054 @@ export class ContentPlayComponent implements OnInit {
         ],
         "board": "State (Maharashtra)"
       }
+
+
+  public tocContent8 = {
+    "ownershipType": [
+      "createdBy"
+    ],
+    "copyright": "Sunbird",
+    "downloadUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/do_11287198635947622412/all-mimetypes_1571288490996_do_11287198635947622412_2.0_spine.ecar",
+    "channel": "b00bc992ef25f1a9a8d63291e20efc8d",
+    "organisation": [
+      "Sunbird"
+    ],
+    "language": [
+      "English"
+    ],
+    "variants": {
+      "online": {
+        "ecarUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/do_11287198635947622412/all-mimetypes_1571288491665_do_11287198635947622412_2.0_online.ecar",
+        "size": 9047
+      },
+      "spine": {
+        "ecarUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/do_11287198635947622412/all-mimetypes_1571288490996_do_11287198635947622412_2.0_spine.ecar",
+        "size": 182112
+      }
     },
-    "ts": "2019-12-29T04:22:41.657Z",
-    "ver": "1.0"
+    "mimeType": "application/vnd.ekstep.content-collection",
+    "leafNodes": [
+      "do_112777871922569216119",
+      "do_112719206370705408185",
+      "test_SLA_html_1553778699",
+      "do_1128516068106403841819",
+      "do_112719201458790400184",
+      "KP_FT_1564330922869",
+      "do_112719212709216256189",
+      "do_11281256041374515214"
+    ],
+    "objectType": "Content",
+    "appIcon": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/do_11287198635947622412/artifact/download-1_1563173579896.thumb.jpeg",
+    "collections": [],
+    "children": [
+      {
+        "identifier": "do_112777871922569216119",
+        "lastStatusChangedOn": "2019-06-06T05:29:52.662+0000",
+        "code": "29b49b48-4167-49a9-9d25-b77740b64ba5",
+        "visibility": "Default",
+        "index": 1,
+        "mimeType": "application/epub",
+        "createdOn": "2019-06-06T05:26:58.672+0000",
+        "versionKey": "1559798991270",
+        "framework": "NCFCOPY",
+        "depth": 1,
+        "children": [],
+        "name": "Integers EPUB",
+        "lastUpdatedOn": "2019-06-06T05:29:51.270+0000",
+        "contentType": "Resource",
+        "status": "Live",
+        "compatibilityLevel": 4,
+        "lastPublishedOn": "2019-06-06T05:29:52.004+0000",
+        "pkgVersion": 1,
+        "downloadUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/do_112777871922569216119/integers-epub_1559798992010_do_112777871922569216119_1.0.ecar",
+        "variants": {
+          "spine": {
+            "ecarUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/do_112777871922569216119/integers-epub_1559798992323_do_112777871922569216119_1.0_spine.ecar",
+            "size": 17050
+          }
+        },
+        "ownershipType": [
+          "createdBy"
+        ],
+        "previewUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/assets/do_112777871922569216119/integers.epub",
+        "year": "2019",
+        "subject": [
+          "Mathematics"
+        ],
+        "channel": "b00bc992ef25f1a9a8d63291e20efc8d",
+        "questions": [],
+        "organisation": [
+          "Sunbird"
+        ],
+        "showNotification": true,
+        "language": [
+          "English"
+        ],
+        "gradeLevel": [
+          "Grade 5"
+        ],
+        "appIcon": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/do_112777871922569216119/artifact/math_1549943542752.thumb.jpg",
+        "collections": [
+          {
+            "identifier": "do_112778048030572544180",
+            "name": "Test-book ncert",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "description": "Enter description for TextBook",
+            "status": "Live"
+          },
+          {
+            "identifier": "do_11287198635947622412",
+            "name": "All MimeTypes",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "description": "Enter description for Collection",
+            "status": "Live"
+          },
+          {
+            "identifier": "do_112778048030572544180",
+            "name": "Test-book ncert",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "description": "Enter description for TextBook",
+            "status": "Draft"
+          }
+        ],
+        "appId": "dev.sunbird.portal",
+        "usesContent": [],
+        "artifactUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/assets/do_112777871922569216119/integers.epub",
+        "contentEncoding": "gzip",
+        "lockKey": "f919a1ff-1346-4c29-b50a-e4173c39844f",
+        "item_sets": [],
+        "lastUpdatedBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+        "audience": [
+          "Learner"
+        ],
+        "consumerId": "af4314ad-e172-4bb6-b091-6ed3569c0195",
+        "mediaType": "content",
+        "osId": "org.ekstep.quiz.app",
+        "lastPublishedBy": "95e4942d-cbe8-477d-aebd-ad8e6de4bfc8",
+        "version": 1,
+        "license": "CC-BY 4.0 For details: https://creativecommons.org/licenses/by/4.0/legalcode",
+        "prevState": "Review",
+        "size": 305466,
+        "concepts": [],
+        "methods": [],
+        "medium": [
+          "English"
+        ],
+        "streamingUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/assets/do_112777871922569216119/integers.epub",
+        "posterImage": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/do_1126971374955151361222/artifact/math_1549943542752.jpg",
+        "idealScreenSize": "normal",
+        "contentDisposition": "inline",
+        "SYS_INTERNAL_LAST_UPDATED_ON": "2019-06-06T05:29:52.671+0000",
+        "dialcodeRequired": "No",
+        "owner": "Creation",
+        "creator": "Creation",
+        "createdFor": [
+          "ORG_001"
+        ],
+        "os": [
+          "All"
+        ],
+        "libraries": [],
+        "idealScreenDensity": "hdpi",
+        "s3Key": "ecar_files/do_112777871922569216119/integers-epub_1559798992010_do_112777871922569216119_1.0.ecar",
+        "lastSubmittedOn": "2019-06-06T05:27:43.369+0000",
+        "createdBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+        "ownedBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+        "board": "NCERT",
+        "resourceType": "Learn"
+      },
+      {
+        "identifier": "test_SLA_html_1553778699",
+        "lastStatusChangedOn": "2019-03-28T14:20:36.249+0000",
+        "code": "Test",
+        "visibility": "Default",
+        "description": "Test SLA",
+        "index": 2,
+        "mimeType": "application/vnd.ekstep.html-archive",
+        "createdOn": "2019-03-28T13:11:40.157+0000",
+        "versionKey": "1553782810427",
+        "framework": "NCF",
+        "depth": 1,
+        "children": [],
+        "name": "Test Resource html SLA",
+        "lastUpdatedOn": "2019-03-28T14:20:10.427+0000",
+        "contentType": "Resource",
+        "status": "Live",
+        "compatibilityLevel": 1,
+        "lastPublishedOn": "2019-03-28T14:20:10.486+0000",
+        "pkgVersion": 1,
+        "downloadUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/test_SLA_html_1553778699/test-resource-html-sla_1553782810486_test_sla_html_1553778699_1.0.ecar",
+        "variants": {
+          "spine": {
+            "ecarUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/test_SLA_html_1553778699/test-resource-html-sla_1553782816018_test_sla_html_1553778699_1.0_spine.ecar",
+            "size": 910
+          }
+        },
+        "ownershipType": [
+          "createdBy"
+        ],
+        "previewUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/html/test_SLA_html_1553778699-latest",
+        "channel": "in.ekstep",
+        "questions": [],
+        "language": [
+          "English"
+        ],
+        "collections": [
+          {
+            "identifier": "do_11287198635947622412",
+            "name": "All MimeTypes",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "description": "Enter description for Collection",
+            "status": "Live"
+          }
+        ],
+        "appId": "sunbird.env.sunbird.ins.portal",
+        "usesContent": [],
+        "artifactUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/test_sla_html_1553778699/artifact/mujhepehchano_hi_6696_1522055494_1522055496389_1553778700485.zip",
+        "contentEncoding": "gzip",
+        "item_sets": [],
+        "audience": [
+          "Learner"
+        ],
+        "consumerId": "9393568c-3a56-47dd-a9a3-34da3c821638",
+        "mediaType": "content",
+        "osId": "org.ekstep.quiz.app",
+        "lastPublishedBy": "system",
+        "license": "CC-BY 4.0 For details: https://creativecommons.org/licenses/by/4.0/legalcode",
+        "prevState": "Draft",
+        "size": 52461810,
+        "concepts": [],
+        "methods": [],
+        "streamingUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/html/test_SLA_html_1553778699-latest",
+        "idealScreenSize": "normal",
+        "contentDisposition": "inline",
+        "SYS_INTERNAL_LAST_UPDATED_ON": "2019-03-28T14:20:36.254+0000",
+        "dialcodeRequired": "No",
+        "os": [
+          "All"
+        ],
+        "libraries": [],
+        "idealScreenDensity": "hdpi",
+        "s3Key": "ecar_files/test_SLA_html_1553778699/test-resource-html-sla_1553782810486_test_sla_html_1553778699_1.0.ecar",
+        "resourceType": "Learn"
+      },
+      {
+        "identifier": "do_112719212709216256189",
+        "code": "4a18d8b7-128b-490d-9ccd-080bd8bcea22",
+        "visibility": "Default",
+        "index": 3,
+        "mimeType": "video/webm",
+        "createdOn": "2019-03-15T08:24:30.168+0000",
+        "versionKey": "1552647023492",
+        "framework": "NCFCOPY",
+        "depth": 1,
+        "children": [],
+        "name": "Test SLA Webm",
+        "lastUpdatedOn": "2019-03-15T10:50:23.492+0000",
+        "contentType": "Resource",
+        "status": "Live",
+        "compatibilityLevel": 1,
+        "lastPublishedOn": "2019-03-15T10:50:23.661+0000",
+        "pkgVersion": 11,
+        "downloadUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/do_112719212709216256189/test-sla-webm_1552647023661_do_112719212709216256189_11.0.ecar",
+        "variants": {
+          "spine": {
+            "ecarUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/do_112719212709216256189/test-sla-webm_1552647024271_do_112719212709216256189_11.0_spine.ecar",
+            "size": 19290
+          }
+        },
+        "ownershipType": [
+          "createdBy"
+        ],
+        "previewUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/assets/do_112719212709216256189/small.webm",
+        "subject": [
+          "Tamil"
+        ],
+        "channel": "b00bc992ef25f1a9a8d63291e20efc8d",
+        "questions": [],
+        "organisation": [
+          "Sunbird"
+        ],
+        "language": [
+          "English"
+        ],
+        "appIcon": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/do_112719212709216256189/artifact/bitcoin-4_1545114579639.thumb.jpg",
+        "gradeLevel": [
+          "Grade 1",
+          "Grade 2"
+        ],
+        "collections": [
+          {
+            "identifier": "do_112719318813663232120",
+            "name": "Course With 75 Units",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "description": "Course With 75 Units",
+            "status": "Live"
+          },
+          {
+            "identifier": "do_112807014474301440133",
+            "name": "TB212",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "description": "Enter description for TextBook",
+            "status": "Live"
+          },
+          {
+            "identifier": "do_11287198635947622412",
+            "name": "All MimeTypes",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "description": "Enter description for Collection",
+            "status": "Live"
+          },
+          {
+            "identifier": "do_1127212344324751361295",
+            "name": "Course with Max number of resources: 75",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "description": "Max number of resources: 75",
+            "status": "Live"
+          },
+          {
+            "identifier": "do_112719322752671744121",
+            "name": "1",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "status": "Draft"
+          }
+        ],
+        "appId": "dev.sunbird.portal",
+        "usesContent": [],
+        "artifactUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/assets/do_112719212709216256189/small.webm",
+        "contentEncoding": "identity",
+        "lockKey": "22d9a9e9-003e-43f0-ac25-5307c4d42dea",
+        "item_sets": [],
+        "lastUpdatedBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+        "audience": [
+          "Learner"
+        ],
+        "consumerId": "9f0f435e-9f1c-47a2-bde3-02f4dcfddac3",
+        "mediaType": "content",
+        "osId": "org.ekstep.quiz.app",
+        "lastPublishedBy": "system",
+        "prevState": "Live",
+        "license": "CC-BY 4.0 For details: https://creativecommons.org/licenses/by/4.0/legalcode",
+        "size": 246544,
+        "concepts": [],
+        "methods": [],
+        "streamingUrl": "https://sunbirddevmedia-inct.streaming.media.azure.net/afb31a46-6610-459b-8be7-f9d688882152/small.ism/manifest(format=m3u8-aapl-v3)",
+        "medium": [
+          "English"
+        ],
+        "posterImage": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/do_112657578634444800154/artifact/bitcoin-4_1545114579639.jpg",
+        "idealScreenSize": "normal",
+        "contentDisposition": "inline",
+        "SYS_INTERNAL_LAST_UPDATED_ON": "2019-03-15T11:20:24.346+0000",
+        "dialcodeRequired": "No",
+        "owner": "Creation",
+        "creator": "Creation",
+        "createdFor": [
+          "ORG_001"
+        ],
+        "os": [
+          "All"
+        ],
+        "libraries": [],
+        "idealScreenDensity": "hdpi",
+        "s3Key": "ecar_files/do_112719212709216256189/test-sla-webm_1552647023661_do_112719212709216256189_11.0.ecar",
+        "createdBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+        "ownedBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+        "board": "CBSE",
+        "resourceType": "Learn"
+      },
+      {
+        "identifier": "do_112719201458790400184",
+        "code": "7c338e5d-1829-48b8-864a-c22d17dc0d44",
+        "visibility": "Default",
+        "description": "Test",
+        "index": 4,
+        "mimeType": "video/mp4",
+        "createdOn": "2019-03-15T08:01:36.824+0000",
+        "versionKey": "1552646955424",
+        "framework": "NCFCOPY",
+        "depth": 1,
+        "children": [],
+        "name": "Test SLA MP4 3",
+        "lastUpdatedOn": "2019-03-15T10:49:15.424+0000",
+        "contentType": "Resource",
+        "status": "Live",
+        "compatibilityLevel": 1,
+        "lastPublishedOn": "2019-03-15T10:49:15.624+0000",
+        "pkgVersion": 11,
+        "downloadUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/do_112719201458790400184/test-sla-mp4-3_1552646955624_do_112719201458790400184_11.0.ecar",
+        "variants": {
+          "spine": {
+            "ecarUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/do_112719201458790400184/test-sla-mp4-3_1552646956488_do_112719201458790400184_11.0_spine.ecar",
+            "size": 47889
+          }
+        },
+        "ownershipType": [
+          "createdBy"
+        ],
+        "previewUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/assets/do_112719201458790400184/samplevideo_720x480_2mb.mp4",
+        "subject": [
+          "English"
+        ],
+        "channel": "b00bc992ef25f1a9a8d63291e20efc8d",
+        "questions": [],
+        "organisation": [
+          "Sunbird"
+        ],
+        "language": [
+          "English"
+        ],
+        "appIcon": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/do_112719201458790400184/artifact/salt_1550475248534.thumb.jpg",
+        "gradeLevel": [
+          "Grade 1",
+          "Grade 2"
+        ],
+        "collections": [
+          {
+            "identifier": "do_1127269360797941761184",
+            "name": "1.3.1",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "status": "Draft"
+          },
+          {
+            "identifier": "do_1127269360797532161182",
+            "name": "1.1.2",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "status": "Draft"
+          },
+          {
+            "identifier": "do_11287198635947622412",
+            "name": "All MimeTypes",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "description": "Enter description for Collection",
+            "status": "Live"
+          },
+          {
+            "identifier": "do_1127269360793354241112",
+            "name": "1.2.2",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "status": "Draft"
+          },
+          {
+            "identifier": "do_112726936078974976159",
+            "name": "1.3.2",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "status": "Draft"
+          },
+          {
+            "identifier": "do_1127269360797450241180",
+            "name": "1.1.1",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "status": "Draft"
+          },
+          {
+            "identifier": "do_1127212344324751361295",
+            "name": "Course with Max number of resources: 75",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "description": "Max number of resources: 75",
+            "status": "Live"
+          }
+        ],
+        "appId": "dev.sunbird.portal",
+        "usesContent": [],
+        "artifactUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/assets/do_112719201458790400184/samplevideo_720x480_2mb.mp4",
+        "contentEncoding": "identity",
+        "lockKey": "3d6d80a9-7b3a-431f-a526-ab49515beb13",
+        "item_sets": [],
+        "lastUpdatedBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+        "audience": [
+          "Learner"
+        ],
+        "consumerId": "9f0f435e-9f1c-47a2-bde3-02f4dcfddac3",
+        "mediaType": "content",
+        "osId": "org.ekstep.quiz.app",
+        "lastPublishedBy": "system",
+        "prevState": "Live",
+        "license": "CC-BY 4.0 For details: https://creativecommons.org/licenses/by/4.0/legalcode",
+        "size": 2140069,
+        "concepts": [],
+        "methods": [],
+        "streamingUrl": "https://sunbirddevmedia-inct.streaming.media.azure.net/6592f88e-4205-478c-a4ad-9f41b47e0397/samplevideo_720x480_2mb.ism/manifest(format=m3u8-aapl-v3)",
+        "posterImage": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/do_1127014932341309441344/artifact/salt_1550475248534.jpg",
+        "idealScreenSize": "normal",
+        "contentDisposition": "inline",
+        "SYS_INTERNAL_LAST_UPDATED_ON": "2019-03-15T11:20:22.719+0000",
+        "dialcodeRequired": "No",
+        "owner": "Creation",
+        "creator": "Creation",
+        "createdFor": [
+          "ORG_001"
+        ],
+        "os": [
+          "All"
+        ],
+        "libraries": [],
+        "idealScreenDensity": "hdpi",
+        "s3Key": "ecar_files/do_112719201458790400184/test-sla-mp4-3_1552646955624_do_112719201458790400184_11.0.ecar",
+        "createdBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+        "ownedBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+        "board": "CBSE",
+        "resourceType": "Learn"
+      },
+      {
+        "identifier": "do_112719206370705408185",
+        "code": "ea8b201c-9b9c-4523-b735-d85370e7588e",
+        "visibility": "Default",
+        "index": 5,
+        "mimeType": "application/vnd.ekstep.h5p-archive",
+        "createdOn": "2019-03-15T08:11:36.424+0000",
+        "versionKey": "1552646967851",
+        "framework": "NCFCOPY",
+        "depth": 1,
+        "children": [],
+        "name": "Test SLA H5p",
+        "lastUpdatedOn": "2019-03-15T10:49:27.851+0000",
+        "contentType": "Resource",
+        "status": "Live",
+        "compatibilityLevel": 4,
+        "lastPublishedOn": "2019-03-15T10:49:27.912+0000",
+        "pkgVersion": 11,
+        "downloadUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/do_112719206370705408185/test-sla-h5p_1552646967913_do_112719206370705408185_11.0.ecar",
+        "variants": {
+          "spine": {
+            "ecarUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/do_112719206370705408185/test-sla-h5p_1552646968985_do_112719206370705408185_11.0_spine.ecar",
+            "size": 19234
+          }
+        },
+        "ownershipType": [
+          "createdBy"
+        ],
+        "previewUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/h5p/do_112719206370705408185-latest",
+        "channel": "b00bc992ef25f1a9a8d63291e20efc8d",
+        "questions": [],
+        "organisation": [
+          "Sunbird"
+        ],
+        "showNotification": true,
+        "language": [
+          "English"
+        ],
+        "gradeLevel": [
+          "Grade 2",
+          "Grade 3"
+        ],
+        "appIcon": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/do_112719206370705408185/artifact/bitcoin-4_1545114579639.thumb.jpg",
+        "collections": [
+          {
+            "identifier": "do_11287198635947622412",
+            "name": "All MimeTypes",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "description": "Enter description for Collection",
+            "status": "Live"
+          },
+          {
+            "identifier": "do_1127212344324751361295",
+            "name": "Course with Max number of resources: 75",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "description": "Max number of resources: 75",
+            "status": "Live"
+          }
+        ],
+        "appId": "dev.sunbird.portal",
+        "usesContent": [],
+        "artifactUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/do_112719206370705408185/artifact/1552637498952_do_112719206370705408185.zip",
+        "contentEncoding": "gzip",
+        "lockKey": "97476541-a37b-4e24-a342-4bcac967b0da",
+        "item_sets": [],
+        "lastUpdatedBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+        "audience": [
+          "Learner"
+        ],
+        "consumerId": "9393568c-3a56-47dd-a9a3-34da3c821638",
+        "mediaType": "content",
+        "osId": "org.ekstep.quiz.app",
+        "lastPublishedBy": "system",
+        "prevState": "Live",
+        "license": "CC-BY 4.0 For details: https://creativecommons.org/licenses/by/4.0/legalcode",
+        "size": 4674150,
+        "concepts": [],
+        "methods": [],
+        "streamingUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/h5p/do_112719206370705408185-latest",
+        "posterImage": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/do_112657578634444800154/artifact/bitcoin-4_1545114579639.jpg",
+        "idealScreenSize": "normal",
+        "contentDisposition": "inline",
+        "SYS_INTERNAL_LAST_UPDATED_ON": "2019-03-15T10:50:17.908+0000",
+        "dialcodeRequired": "No",
+        "owner": "Creation",
+        "creator": "Creation",
+        "createdFor": [
+          "ORG_001"
+        ],
+        "os": [
+          "All"
+        ],
+        "libraries": [],
+        "idealScreenDensity": "hdpi",
+        "s3Key": "ecar_files/do_112719206370705408185/test-sla-h5p_1552646967913_do_112719206370705408185_11.0.ecar",
+        "createdBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+        "ownedBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+        "board": "ICSE",
+        "resourceType": "Learn"
+      },
+      {
+        "identifier": "do_1128516068106403841819",
+        "lastStatusChangedOn": "2019-09-18T09:43:31.593+0000",
+        "code": "67ee7941-10de-4274-8308-e11a195c5d20",
+        "visibility": "Default",
+        "index": 6,
+        "mimeType": "application/pdf",
+        "createdOn": "2019-09-18T09:40:59.501+0000",
+        "versionKey": "1568799809800",
+        "framework": "NCFCOPY",
+        "depth": 1,
+        "children": [],
+        "name": "PDF new navigation",
+        "lastUpdatedOn": "2019-09-18T09:43:29.800+0000",
+        "contentType": "Resource",
+        "status": "Live",
+        "compatibilityLevel": 4,
+        "lastPublishedOn": "2019-09-18T09:43:30.587+0000",
+        "pkgVersion": 1,
+        "downloadUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/do_1128516068106403841819/pdf-new-navigation_1568799810613_do_1128516068106403841819_1.0.ecar",
+        "variants": {
+          "spine": {
+            "ecarUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/do_1128516068106403841819/pdf-new-navigation_1568799811236_do_1128516068106403841819_1.0_spine.ecar",
+            "size": 38691
+          }
+        },
+        "ownershipType": [
+          "createdBy"
+        ],
+        "copyright": "Sunbird",
+        "previewUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/assets/do_1128516068106403841819/8-maths-ncert-chapter-11.pdf",
+        "subject": [
+          "Math"
+        ],
+        "channel": "b00bc992ef25f1a9a8d63291e20efc8d",
+        "questions": [],
+        "organisation": [
+          "Sunbird"
+        ],
+        "language": [
+          "English"
+        ],
+        "appIcon": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/do_1128516068106403841819/artifact/06_maths_book_1566813333849.thumb.jpg",
+        "gradeLevel": [
+          "Kindergarten"
+        ],
+        "collections": [
+          {
+            "identifier": "do_11287198635947622412",
+            "name": "All MimeTypes",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "description": "Enter description for Collection",
+            "status": "Live"
+          }
+        ],
+        "appId": "dev.sunbird.portal",
+        "usesContent": [],
+        "artifactUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/assets/do_1128516068106403841819/8-maths-ncert-chapter-11.pdf",
+        "contentEncoding": "identity",
+        "lockKey": "0fa9ed8d-23d3-4f77-9cee-0c540c8ab4e1",
+        "item_sets": [],
+        "lastUpdatedBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+        "audience": [
+          "Learner"
+        ],
+        "consumerId": "88060631-91a6-4f94-b524-5cbfe2f9ec4a",
+        "mediaType": "content",
+        "osId": "org.ekstep.quiz.app",
+        "lastPublishedBy": "Ekstep",
+        "version": 1,
+        "pragma": [
+          "external"
+        ],
+        "license": "CC-BY 4.0 For details: https://creativecommons.org/licenses/by/4.0/legalcode",
+        "prevState": "Review",
+        "size": 811036,
+        "concepts": [],
+        "methods": [],
+        "streamingUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/assets/do_1128516068106403841819/8-maths-ncert-chapter-11.pdf",
+        "medium": [
+          "Hindi"
+        ],
+        "posterImage": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/do_112835334818643968148/artifact/06_maths_book_1566813333849.jpg",
+        "idealScreenSize": "normal",
+        "contentDisposition": "inline",
+        "SYS_INTERNAL_LAST_UPDATED_ON": "2019-09-18T09:43:31.599+0000",
+        "dialcodeRequired": "No",
+        "creator": "Creation",
+        "createdFor": [
+          "ORG_001"
+        ],
+        "os": [
+          "All"
+        ],
+        "libraries": [],
+        "idealScreenDensity": "hdpi",
+        "s3Key": "ecar_files/do_1128516068106403841819/pdf-new-navigation_1568799810613_do_1128516068106403841819_1.0.ecar",
+        "lastSubmittedOn": "2019-09-18T09:42:52.570+0000",
+        "createdBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+        "board": "NCERT",
+        "resourceType": "Learn"
+      },
+      {
+        "identifier": "do_11281256041374515214",
+        "lastStatusChangedOn": "2019-07-25T05:43:31.462+0000",
+        "code": "test.ecml.7",
+        "visibility": "Default",
+        "description": "test content",
+        "index": 7,
+        "mimeType": "application/vnd.ekstep.ecml-archive",
+        "createdOn": "2019-07-25T05:40:53.630+0000",
+        "versionKey": "1564033397954",
+        "framework": "NCF",
+        "depth": 1,
+        "children": [],
+        "name": "Test ECML",
+        "lastUpdatedOn": "2019-07-25T05:43:17.954+0000",
+        "contentType": "Resource",
+        "status": "Live",
+        "compatibilityLevel": 1,
+        "lastPublishedOn": "2019-07-25T05:43:25.820+0000",
+        "pkgVersion": 1,
+        "downloadUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/do_11281256041374515214/test-ecml_1564033405829_do_11281256041374515214_1.0.ecar",
+        "variants": {
+          "spine": {
+            "ecarUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/do_11281256041374515214/test-ecml_1564033410165_do_11281256041374515214_1.0_spine.ecar",
+            "size": 885
+          }
+        },
+        "ownershipType": [
+          "createdBy"
+        ],
+        "previewUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/ecml/do_11281256041374515214-latest",
+        "channel": "in.ekstep",
+        "questions": [],
+        "language": [
+          "English"
+        ],
+        "collections": [
+          {
+            "identifier": "do_11287198635947622412",
+            "name": "All MimeTypes",
+            "objectType": "Content",
+            "relation": "hasSequenceMember",
+            "description": "Enter description for Collection",
+            "status": "Live"
+          }
+        ],
+        "appId": "local.sunbird.portal",
+        "usesContent": [],
+        "contentEncoding": "gzip",
+        "artifactUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/do_11281256041374515214/artifact/1564033402478_do_11281256041374515214.zip",
+        "item_sets": [],
+        "audience": [
+          "Learner"
+        ],
+        "consumerId": "02bf5216-c947-492f-929b-af2e61ea78cd",
+        "mediaType": "content",
+        "osId": "org.ekstep.quiz.app",
+        "lastPublishedBy": "in.ekstep",
+        "version": 2,
+        "license": "CC-BY 4.0 For details: https://creativecommons.org/licenses/by/4.0/legalcode",
+        "prevState": "Draft",
+        "size": 32963112,
+        "concepts": [],
+        "methods": [],
+        "streamingUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/ecml/do_11281256041374515214-latest",
+        "idealScreenSize": "normal",
+        "contentDisposition": "inline",
+        "SYS_INTERNAL_LAST_UPDATED_ON": "2019-07-25T05:43:31.467+0000",
+        "dialcodeRequired": "No",
+        "os": [
+          "All"
+        ],
+        "libraries": [],
+        "idealScreenDensity": "hdpi",
+        "s3Key": "ecar_files/do_11281256041374515214/test-ecml_1564033405829_do_11281256041374515214_1.0.ecar"
+      },
+      {
+        "identifier": "KP_FT_1564330922869",
+        "lastStatusChangedOn": "2019-07-28T16:22:03.899+0000",
+        "code": "kp.ft.resource.youtube",
+        "visibility": "Default",
+        "description": "KP Integration Test Content",
+        "index": 8,
+        "mimeType": "video/x-youtube",
+        "createdOn": "2019-07-28T16:22:02.871+0000",
+        "versionKey": "1564330923309",
+        "framework": "NCF",
+        "depth": 1,
+        "name": "KP Integration Test Content",
+        "lastUpdatedOn": "2019-07-28T16:22:03.309+0000",
+        "contentType": "Resource",
+        "status": "Live",
+        "compatibilityLevel": 4,
+        "lastPublishedOn": "2019-07-28T16:22:03.346+0000",
+        "pkgVersion": 1,
+        "downloadUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/KP_FT_1564330922869/kp-integration-test-content_1564330923351_kp_ft_1564330922869_1.0.ecar",
+        "variants": {
+          "spine": {
+            "ecarUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/KP_FT_1564330922869/kp-integration-test-content_1564330923650_kp_ft_1564330922869_1.0_spine.ecar",
+            "size": 870
+          }
+        },
+        "ownershipType": [
+          "createdBy"
+        ],
+        "previewUrl": "https://www.youtube.com/watch?v=FfgT6zx4k3Q",
+        "channel": "channel-01",
+        "language": [
+          "English"
+        ],
+        "streamingUrl": "https://www.youtube.com/watch?v=FfgT6zx4k3Q",
+        "idealScreenSize": "normal",
+        "appId": "local.sunbird.desktop",
+        "contentDisposition": "online",
+        "artifactUrl": "https://www.youtube.com/watch?v=FfgT6zx4k3Q",
+        "contentEncoding": "identity",
+        "SYS_INTERNAL_LAST_UPDATED_ON": "2019-07-28T16:22:03.903+0000",
+        "dialcodeRequired": "No",
+        "audience": [
+          "Learner"
+        ],
+        "os": [
+          "All"
+        ],
+        "mediaType": "content",
+        "osId": "org.ekstep.quiz.app",
+        "lastPublishedBy": "KP_FT_PUBLISHER",
+        "version": 1,
+        "pragma": [
+          "external"
+        ],
+        "prevState": "Draft",
+        "license": "Standard YouTube License",
+        "idealScreenDensity": "hdpi",
+        "s3Key": "ecar_files/KP_FT_1564330922869/kp-integration-test-content_1564330923351_kp_ft_1564330922869_1.0.ecar",
+        "size": 869
+      }
+    ],
+    "appId": "dev.sunbird.portal",
+    "contentEncoding": "gzip",
+    "lockKey": "83248c43-993e-4922-bb4c-38510d393795",
+    "mimeTypesCount": "{\"application/vnd.ekstep.h5p-archive\":1,\"application/vnd.ekstep.html-archive\":1,\"video/webm\":1,\"application/pdf\":1,\"application/epub\":1,\"application/vnd.ekstep.ecml-archive\":1,\"video/x-youtube\":1,\"video/mp4\":1}",
+    "totalCompressedSize": 93603056,
+    "contentType": "Collection",
+    "lastUpdatedBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+    "identifier": "do_11287198635947622412",
+    "audience": [
+      "Learner"
+    ],
+    "toc_url": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/do_11287198635947622412/artifact/do_11287198635947622412_toc.json",
+    "visibility": "Default",
+    "contentTypesCount": "{\"Resource\":8}",
+    "childNodes": [
+      "do_112777871922569216119",
+      "do_112719206370705408185",
+      "test_SLA_html_1553778699",
+      "do_1128516068106403841819",
+      "do_112719201458790400184",
+      "KP_FT_1564330922869",
+      "do_112719212709216256189",
+      "do_11281256041374515214"
+    ],
+    "consumerId": "273f3b18-5dda-4a27-984a-060c7cd398d3",
+    "mediaType": "content",
+    "osId": "org.ekstep.quiz.app",
+    "lastPublishedBy": "95e4942d-cbe8-477d-aebd-ad8e6de4bfc8",
+    "version": 2,
+    "prevState": "Review",
+    "license": "Creative Commons Attribution (CC BY)",
+    "size": 182112,
+    "lastPublishedOn": "2019-10-17T05:01:30.696+0000",
+    "name": "All MimeTypes",
+    "status": "Live",
+    "code": "do_11287198635947622412",
+    "description": "Enter description for Collection",
+    "posterImage": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/do_112805517965123584126/artifact/download-1_1563173579896.jpeg",
+    "idealScreenSize": "normal",
+    "createdOn": "2019-10-17T04:43:17.396+0000",
+    "contentDisposition": "inline",
+    "lastUpdatedOn": "2019-10-17T05:01:29.767+0000",
+    "SYS_INTERNAL_LAST_UPDATED_ON": "2019-10-17T05:01:32.147+0000",
+    "dialcodeRequired": "No",
+    "createdFor": [
+      "ORG_001"
+    ],
+    "creator": "Creation",
+    "lastStatusChangedOn": "2019-10-17T05:01:29.664+0000",
+    "os": [
+      "All"
+    ],
+    "pkgVersion": 2,
+    "versionKey": "1571288489845",
+    "idealScreenDensity": "hdpi",
+    "depth": 0,
+    "s3Key": "ecar_files/do_11287198635947622412/all-mimetypes_1571288490996_do_11287198635947622412_2.0_spine.ecar",
+    "framework": "NCFCOPY",
+    "lastSubmittedOn": "2019-10-17T05:01:08.323+0000",
+    "createdBy": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+    "leafNodesCount": 8,
+    "compatibilityLevel": 1,
+    "usedByContent": [],
+    "resourceType": "Collection",
+    "orgDetails": {
+      "email": "support_dev@sunbird.org",
+      "orgName": "Sunbird"
+    },
+    "subject": [
+      "Marathi"
+    ],
+    "gradeLevel": [
+      "Grade 6"
+    ],
+    "contentCredits": [
+      {
+        "id": "874ed8a5-782e-4f6c-8f36-e0288455901e",
+        "name": "Creation",
+        "type": "user"
+      }
+    ],
+    "languageCode": "en",
+    "medium": [
+      "Marathi"
+    ],
+    "board": "NCERT",
+    "licenseDetails": {}
   }
 
-  activeContent ;
+  public tocContent10 = {
+    "ownershipType": [
+      "createdBy"
+    ],
+    "code": "kp.ft.collection.collection",
+    "downloadUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/KP_FT_1576005708538/kp-integration-test-collection-content_1576005709051_kp_ft_1576005708538_1.0_spine.ecar",
+    "channel": "channel-01",
+    "description": "KP Integration Test Collection Content",
+    "language": [
+      "English"
+    ],
+    "variants": {
+      "online": {
+        "ecarUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/KP_FT_1576005708538/kp-integration-test-collection-content_1576005709194_kp_ft_1576005708538_1.0_online.ecar",
+        "size": 2354
+      },
+      "spine": {
+        "ecarUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/KP_FT_1576005708538/kp-integration-test-collection-content_1576005709051_kp_ft_1576005708538_1.0_spine.ecar",
+        "size": 2293
+      }
+    },
+    "mimeType": "application/vnd.ekstep.content-collection",
+    "idealScreenSize": "normal",
+    "createdOn": "2019-12-10T19:21:50.054+0000",
+    "objectType": "Content",
+    "children": [
+      {
+        "parent": "KP_FT_1576005708538",
+        "identifier": "do_1129106387651788801311",
+        "lastStatusChangedOn": "2019-12-10T19:21:48.640+0000",
+        "code": "2cb4d698-dc19-4f0c-9990-96f49daff753",
+        "visibility": "Parent",
+        "description": "Test_Collection_desc_9476293676",
+        "index": 1,
+        "mimeType": "application/vnd.ekstep.content-collection",
+        "createdOn": "2019-12-10T19:21:48.640+0000",
+        "versionKey": "1576005708640",
+        "depth": 1,
+        "children": [],
+        "name": "Test_Collection_name_8579216150",
+        "lastUpdatedOn": "2019-12-10T19:21:48.716+0000",
+        "contentType": "Collection",
+        "status": "Live",
+        "compatibilityLevel": 1,
+        "lastPublishedOn": "2019-12-10T19:21:48.754+0000",
+        "pkgVersion": 1,
+        "leafNodesCount": 0,
+        "downloadUrl": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/KP_FT_1576005708538/kp-integration-test-collection-content_1576005709051_kp_ft_1576005708538_1.0_spine.ecar",
+        "variants": "{\"online\":{\"ecarUrl\":\"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/KP_FT_1576005708538/kp-integration-test-collection-content_1576005709194_kp_ft_1576005708538_1.0_online.ecar\",\"size\":2354.0},\"spine\":{\"ecarUrl\":\"https://sunbirddev.blob.core.windows.net/sunbird-content-dev/ecar_files/KP_FT_1576005708538/kp-integration-test-collection-content_1576005709051_kp_ft_1576005708538_1.0_spine.ecar\",\"size\":2293.0}}"
+      }
+    ],
+    "appId": "@ignore@",
+    "contentDisposition": "inline",
+    "contentEncoding": "gzip",
+    "lastUpdatedOn": "2019-12-10T19:21:48.716+0000",
+    "mimeTypesCount": "{\"application/vnd.ekstep.content-collection\":1}",
+    "totalCompressedSize": 0,
+    "SYS_INTERNAL_LAST_UPDATED_ON": "2019-12-10T19:21:49.586+0000",
+    "contentType": "Collection",
+    "dialcodeRequired": "No",
+    "identifier": "KP_FT_1576005708538",
+    "audience": [
+      "Learner"
+    ],
+    "lastStatusChangedOn": "2019-12-10T19:21:49.583+0000",
+    "visibility": "Default",
+    "toc_url": "https://sunbirddev.blob.core.windows.net/sunbird-content-dev/content/kp_ft_1576005708538/artifact/kp_ft_1576005708538_toc.json",
+    "os": [
+      "All"
+    ],
+    "contentTypesCount": "{\"Collection\":1}",
+    "childNodes": [
+      "do_1129106387651788801311"
+    ],
+    "consumerId": "9e59003e-01d0-45f3-b3e9-7f9162848aec",
+    "mediaType": "content",
+    "osId": "org.ekstep.quiz.app",
+    "lastPublishedBy": "KP_FT_PUBLISHER",
+    "version": 2,
+    "pkgVersion": 1,
+    "versionKey": "1576005708716",
+    "prevState": "Draft",
+    "license": "CC BY 4.0",
+    "idealScreenDensity": "hdpi",
+    "s3Key": "ecar_files/KP_FT_1576005708538/kp-integration-test-collection-content_1576005709051_kp_ft_1576005708538_1.0_spine.ecar",
+    "depth": 0,
+    "framework": "NCF",
+    "size": 2293,
+    "lastPublishedOn": "2019-12-10T19:21:48.754+0000",
+    "leafNodesCount": 0,
+    "compatibilityLevel": 1,
+    "name": "KP Integration Test Collection Content",
+    "status": "Live",
+    "orgDetails": {},
+    "licenseDetails": {
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "description": "This license is Creative Commons Attribution"
+    }
+
+  }
+
+  activeContent;
 
   public activeMimeTypeFilter = ['all'];
 
   constructor() { }
 
   ngOnInit() {
-    const flattenDeepContents = this.flattenDeep(this.tocContent6.children);
-    console.log('flattenDeepContents',flattenDeepContents, this.activeMimeTypeFilter);
-
-    const final = flattenDeepContents.some((c) => this.activeMimeTypeFilter.find(m => m === c.mimeType));
-    console.log('final', final);
+    // const flattenDeepContents = this.flattenDeep(this.tocContent5.children);
+    // this.activeContent = this.firstNonCollectionContent(flattenDeepContents);
 
   }
 
@@ -65319,9 +66340,14 @@ export class ContentPlayComponent implements OnInit {
     console.log('mimetype filter output : ', event);
     this.activeMimeTypeFilter = event.data.value;
   }
-  tocCardClickHandler(event){
+  tocCardClickHandler(event) {
     console.log('tocCardClickHandler', event);
     this.activeContent = event.data;
+  }
+
+  private firstNonCollectionContent(contents) {
+    console.log("firstNonCollectionContent", contents);
+    return contents.find((content) => content.mimeType !== 'application/vnd.ekstep.content-collection');
   }
 
   private flattenDeep(contents) {
@@ -65342,4 +66368,12 @@ export class ContentPlayComponent implements OnInit {
       return contents;
     }
   }
+
+  embedUrl(text) {
+    if (text) {
+      const urlRegex = /(https?:\/\/[^\s]+)/g;
+      return text.replace(urlRegex, '<a href="$1">$1</a>')
+    }
+  }
+
 }

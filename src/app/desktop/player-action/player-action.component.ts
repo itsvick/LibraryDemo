@@ -35,6 +35,11 @@ export class PlayerActionComponent implements OnInit {
       disabled: true
     },
     {
+      name: ActionButtonType.SHARE,
+      label: 'Share',
+      disabled: false
+    },
+    {
       name: ActionButtonType.FULL_SCREEN,
       label: 'Full Screen',
       disabled: false

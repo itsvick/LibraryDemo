@@ -1,26 +1,66 @@
-<div class="sb-back-bar"><div class="ui container"><h4 style="font-size: 14px;"><i class="icon arrow left"></i> Back to Library</h4></div></div>
+<div class="sb-back-bar">
+  <div class="ui container">
+    <h4 style="font-size: 14px;"><i class="icon arrow left"></i> Back to Library</h4>
+  </div>
+</div>
 
 <div class="ui container sbcolumn-container-grid mt-24" style="background-color: #E5EDF5; padding: 0 24px">
   <div class="sbplayer-area grid-item">
-    
-      <div class="aspectratio" data-ratio="16:9">
-          <div>
-            <p>16:9</p>
-            <p>{{activeContent?.name}}</p>
-          </div>
+
+    <div class="aspectratio" data-ratio="16:9">
+      <div>
+        <p>16:9</p>
+        <p>{{activeContent?.name}}</p>
       </div>
+    </div>
 
   </div>
 
   <div class="sbtoc-area grid-item">
     <div class="sbtoc-filter sbtoc-filter--bg-gray sbsmartscroll-style">
-      <sb-library-filters [list]="mimeTypeFilters" [layout]="'round-with-icon'" (selectedMimeType)="selectedFilter($event)">
+      <sb-library-filters [list]="mimeTypeFilters" [layout]="'round-with-icon'"
+        (selectedMimeType)="selectedFilter($event)">
       </sb-library-filters>
     </div>
     <div>
-      <sb-toc-item [tocData]="toc1" [activeMimeTypeFilter]="activeMimeTypeFilter" [activeContent]="activeContent" (tocCardClick)="tocCardClickHandler($event)"></sb-toc-item>
+      <sb-toc-item [tocData]="tocContent" [activeMimeTypeFilter]="activeMimeTypeFilter" [activeContent]="activeContent"
+        (tocCardClick)="tocCardClickHandler($event)"></sb-toc-item>
+      <sb-accordion [multi]="false">
+        <sb-accordion-item [expanded]="false">
+          <sb-accordion-header>
+            <span class="title">Credits And Licence Info</span>
+          </sb-accordion-header>
+          <sb-accordion-body>
+            <div class="credits-section"> 
+              <h4 *ngIf="tocContent8?.author" class="title">Author</h4>
+              <p class="description">{{tocContent8?.author}}</p>
+
+              <h4 *ngIf="tocContent8?.attributions?.length" class="title">Attribution</h4>
+              <p class="description">{{tocContent8?.attributions}}</p>
+
+              <h4 *ngIf="tocContent8?.license" class="title">License terms</h4>
+              <p class="description" [innerHTML]="embedUrl(tocContent8?.license)"></p>
+
+              <h4 *ngIf="tocContent8?.copyright" class="title">Copyright</h4>
+              <p class="description">{{tocContent8?.copyright}}</p>
+
+              <p *ngIf="tocContent8?.originData" class="sub-section">This content is derived from </p>
+              <div *ngIf="tocContent8?.originData">
+                <h4 *ngIf="tocContent8?.originData" class="title">Content</h4>
+                <p class="description">{{tocContent8?.originData?.name}}</p>
+
+                <h4 *ngIf="tocContent8?.originData?.author" class="title">Author of the Source Content</h4>
+                <p class="description">{{tocContent8?.originData?.author}}</p>
+
+                <h4 *ngIf="tocContent8?.originData?.organisation[0]" class="title">Published on DIKSHA by</h4>
+                <p class="description">{{tocContent8?.originData?.organisation[0]}}</p>
+              </div>
+            </div>
+          </sb-accordion-body>
+        </sb-accordion-item>
+      </sb-accordion>
     </div>
-    
+
   </div>
 
   <!-- <div class="sbtoc-area grid-item">
@@ -28,7 +68,7 @@
         <sb-player-toc ></sb-player-toc>
     </div>
   </div> -->
-  
+
   <div class="sbplayer-info-area grid-item">Player Description</div>
   <div class="sbplayer-meta-area grid-item">Player Meta Data</div>
 </div>
