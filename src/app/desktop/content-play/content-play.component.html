@@ -24,7 +24,7 @@
     </div>
     <div>
       <sb-toc-item [tocData]="tocContent" [activeMimeTypeFilter]="activeMimeTypeFilter" [activeContent]="activeContent"
-        (tocCardClick)="tocCardClickHandler($event)"></sb-toc-item>
+        (tocCardClick)="tocCardClickHandler($event)" (noContent)="onNoContentAvailable($event)"></sb-toc-item>
       <sb-accordion [multi]="false">
         <sb-accordion-item [expanded]="false">
           <sb-accordion-header>
