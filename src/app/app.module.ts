@@ -14,7 +14,9 @@ import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FaqComponent } from './faq/faq.component';
 import { PlayerActionComponent } from './desktop/player-action/player-action.component';
-
+import { QumlLibraryModule } from 'quml-library';
+import { ContentListComponent } from './portal/content-list/content-list.component';
+import { ContentDetailsComponent } from './portal/content-details/content-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,12 +26,15 @@ import { PlayerActionComponent } from './desktop/player-action/player-action.com
     ContentPlayComponent,
     FaqComponent,
     PlayerActionComponent,
+    ContentListComponent,
+    ContentDetailsComponent,
 
   ],
   imports: [
     BrowserAnimationsModule,
     AppRoutingModule,
-    CommonConsumptionModule
+    CommonConsumptionModule,
+    QumlLibraryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

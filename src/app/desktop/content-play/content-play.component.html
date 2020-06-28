@@ -23,51 +23,11 @@
       </sb-library-filters>
     </div>
     <div>
-      <sb-toc-item [tocData]="tocContent" [activeMimeTypeFilter]="activeMimeTypeFilter" [activeContent]="activeContent"
+      <sb-toc-item [tocData]="tocContent1" [activeMimeTypeFilter]="activeMimeTypeFilter" [activeContent]="activeContent"
         (tocCardClick)="tocCardClickHandler($event)" (noContent)="onNoContentAvailable($event)"></sb-toc-item>
-      <sb-accordion [multi]="false">
-        <sb-accordion-item [expanded]="false">
-          <sb-accordion-header>
-            <span class="title">Credits And Licence Info</span>
-          </sb-accordion-header>
-          <sb-accordion-body>
-            <div class="credits-section"> 
-              <h4 *ngIf="tocContent8?.author" class="title">Author</h4>
-              <p class="description">{{tocContent8?.author}}</p>
-
-              <h4 *ngIf="tocContent8?.attributions?.length" class="title">Attribution</h4>
-              <p class="description">{{tocContent8?.attributions}}</p>
-
-              <h4 *ngIf="tocContent8?.license" class="title">License terms</h4>
-              <p class="description" [innerHTML]="embedUrl(tocContent8?.license)"></p>
-
-              <h4 *ngIf="tocContent8?.copyright" class="title">Copyright</h4>
-              <p class="description">{{tocContent8?.copyright}}</p>
-
-              <p *ngIf="tocContent8?.originData" class="sub-section">This content is derived from </p>
-              <div *ngIf="tocContent8?.originData">
-                <h4 *ngIf="tocContent8?.originData" class="title">Content</h4>
-                <p class="description">{{tocContent8?.originData?.name}}</p>
-
-                <h4 *ngIf="tocContent8?.originData?.author" class="title">Author of the Source Content</h4>
-                <p class="description">{{tocContent8?.originData?.author}}</p>
-
-                <h4 *ngIf="tocContent8?.originData?.organisation[0]" class="title">Published on DIKSHA by</h4>
-                <p class="description">{{tocContent8?.originData?.organisation[0]}}</p>
-              </div>
-            </div>
-          </sb-accordion-body>
-        </sb-accordion-item>
-      </sb-accordion>
     </div>
 
   </div>
-
-  <!-- <div class="sbtoc-area grid-item">
-    <div>
-        <sb-player-toc ></sb-player-toc>
-    </div>
-  </div> -->
 
   <div class="sbplayer-info-area grid-item">Player Description</div>
   <div class="sbplayer-meta-area grid-item">Player Meta Data</div>

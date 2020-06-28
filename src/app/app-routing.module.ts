@@ -6,6 +6,8 @@ import { MasterLibraryComponent } from './demo/master-library/master-library.com
 import { ContentPlayComponent } from './desktop/content-play/content-play.component';
 import { FaqComponent } from './faq/faq.component';
 import { PlayerActionComponent } from './desktop/player-action/player-action.component';
+import { ContentListComponent } from './portal/content-list/content-list.component';
+import { ContentDetailsComponent } from './portal/content-details/content-details.component';
 
 const routes: Routes = [
   {
@@ -25,6 +27,10 @@ const routes: Routes = [
     component: ContentPlayComponent
   },
   {
+    path: 'content-details',
+    component: ContentDetailsComponent
+  },
+  {
     path: 'play-action',
     component: PlayerActionComponent
   },
@@ -35,6 +41,10 @@ const routes: Routes = [
   {
     path: 'faq',
     component: FaqComponent
+  },
+  {
+    path: 'content-list',
+    component: ContentListComponent
   },
   {
     path: '',
